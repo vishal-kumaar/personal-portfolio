@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      mono: ['Cutive Mono', 'monospace']
+      mono: ['Cutive Mono', 'monospace'],
+      signika: ['Signika', 'sans-serif'],
+      roboto: ['Roboto', 'sans-serif']
     }
   },
   plugins: [],
