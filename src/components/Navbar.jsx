@@ -5,11 +5,10 @@ import devIcon from "../assets/images/devIcon.png";
 export default function Navbar(props) {
   return (
     <nav
-      style={{ backgroundColor: "#212428" }}
-      className="flex justify-between items-center text-white py-6 px-2 sticky left-0 top-0 w-full opacity-95"
+      className={`flex justify-between items-center ${props.sidebarDisplay === "hidden" ? "bg-brownish" : "bg-black"} text-white py-6 px-4 sticky left-0 top-0 w-full opacity-95`}
     >
       <div className="">
-        <img src={devIcon} alt="dev-icon" className="w-14" />
+        <img src={devIcon} alt="dev-icon" className="w-9" />
       </div>
       <div className="">
         <div className={`hidden`}>
@@ -20,8 +19,8 @@ export default function Navbar(props) {
             <div className="mx-6 cursor-pointer hover:text-gray-400">Contact</div>
           </div>
         </div>
-        <div className="">
-          <img src={hamburger} alt="menu" className="w-12 invert cursor-pointer" onClick={props.toggleSidebar} />
+        <div className={props.opacity}>
+          <img src={hamburger} alt="menu" className="w-7 invert" onClick={props.toggleSidebar} />
         </div>
       </div>
     </nav>
