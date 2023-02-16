@@ -15,6 +15,7 @@ module.exports = {
       roboto: ['Roboto', 'sans-serif'],
       poppins: ['Poppins', 'sans-serif'],
       firasans: ['Fira Sans', 'sans-serif'],
+      cursive: ['Cedarville Cursive', 'cursive'],
     }
   },
   plugins: [],

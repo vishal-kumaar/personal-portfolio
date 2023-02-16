@@ -1,28 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
+import Headroom from "react-headroom";
+import { greetings } from "../utils/portfolio";
 import hamburger from "../assets/images/hamburger.svg";
-import devIcon from "../assets/images/devIcon.png";
+import { NavLink } from "react-router-dom";
 
-export default function Navbar(props) {
+export default function Navbar() {
+  let [navBg, setNavBg] = useState("");
+
   return (
-    <nav
-      className={`flex justify-between items-center ${props.sidebarDisplay === "hidden" ? "bg-brownish" : "bg-black"} text-white py-6 px-4 md:px-10 sticky left-0 top-0 w-full opacity-95`}
+    <Headroom
+      onUnfix={() => setNavBg("")}
+      onPin={() => setNavBg("bg-black/80")}
+      className="mt-4"
     >
-      <div className="">
-        <img src={devIcon} alt="dev-icon" className="w-9" />
-      </div>
-      <div className="">
-        <div className={`hidden sm:block`}>
-          <div className="flex font-mono text-lg">
-            <div className="mx-6 cursor-pointer hover:text-gray-400">Home</div>
-            <div className="mx-6 cursor-pointer hover:text-gray-400">Skills</div>
-            <div className="mx-6 cursor-pointer hover:text-gray-400">Project</div>
-            <div className="mx-6 cursor-pointer hover:text-gray-400">Contact</div>
-          </div>
+      <nav
+        className={`text-white flex justify-between items-center px-4 md:px-10 py-3 transition duration-300 ease-in-out ${navBg}`}
+      >
+        <NavLink to="/" className="font-cursive text-3xl">
+          {greetings.name}
+        </NavLink>
+        <div className="hidden md:block">
+          <NavLink
+            to="/"
+            className="ml-6 p-2 rounded font-roboto outline-white hover:bg-white hover:text-black hover:shadow-md"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/project"
+            className="ml-6 p-2 rounded font-roboto outline-white hover:bg-white hover:text-black hover:shadow-md"
+          >
+            Project
+          </NavLink>
+          <NavLink
+            to="/blog"
+            className="ml-6 p-2 rounded font-roboto outline-white hover:bg-white hover:text-black hover:shadow-md"
+          >
+            Blog
+          </NavLink>
+          <NavLink
+            to="/resume"
+            className="ml-6 p-2 rounded font-roboto outline-white hover:bg-white hover:text-black hover:shadow-md"
+          >
+            Resume
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className="ml-6 p-2 rounded font-roboto outline-white hover:bg-white hover:text-black hover:shadow-md"
+          >
+            Contact
+          </NavLink>
         </div>
-        <div className={`${props.opacity} block sm:hidden`}>
-          <img src={hamburger} alt="menu" className="w-7 invert" onClick={props.toggleSidebar} />
+        <div className="block md:hidden">
+          <img src={hamburger} alt="menu" className="invert w-6" />
         </div>
-      </div>
-    </nav>
+      </nav>
+    </Headroom>
   );
 }

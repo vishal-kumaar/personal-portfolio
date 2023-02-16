@@ -1,59 +1,43 @@
-import React from "react";
-import devIcon from "../assets/images/devIcon.png";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import avatar from "../assets/images/avatar.svg";
 import close from "../assets/images/close.svg";
-import github from "../assets/images/github.svg";
-import instagram from "../assets/images/instagram.svg";
-import facebook from "../assets/images/facebook.svg";
-import linkedin from "../assets/images/linkedin.svg";
-import email from "../assets/images/email.svg";
+import home from "../assets/images/home.svg";
+import project from "../assets/images/project.svg";
+import blog from "../assets/images/blog.svg";
+import resume from "../assets/images/resume.svg";
+import contact from "../assets/images/contact.svg";
 
-export default function Sidebar(props) {
+export default function Sidebar() {
   return (
-    <aside
-      className={`fixed top-0 left-0 h-full w-80 z-50 transition duration-300 ease-in-out p-6 bg-brownish text-white overflow-auto ${props.translate}`}
-    >
-      <div className="flex justify-between items-center">
-        <div>
-          <img src={devIcon} alt="dev-icon" className="w-12" />
-        </div>
-        <img
-          src={close}
-          alt="close"
-          className="w-7 invert cursor-pointer"
-          onClick={props.toggleSidebar}
-        />
+    <aside className='fixed top-0 left-0 h-screen bg-white z-10'>
+      <div className='flex items-center justify-between mb-5 mx-4 pt-4'>
+        <img src={avatar} alt="developer" className='w-14'/>
+        <img src={close} alt="close" className='w-7 cursor-pointer'/>
       </div>
-      <div className="font-signika mt-4 mb-6 text-lg">Vishal Kumar</div>
-      <hr />
-      <div className="mb-28 mt-8">
-        <div className="my-4 text-xl font-mono font-semibold">Home</div>
-        <div className="my-4 text-xl font-mono font-semibold">Skills</div>
-        <div className="my-4 text-xl font-mono font-semibold">Project</div>
-        <div className="my-4 text-xl font-mono font-semibold">Contact</div>
-      </div>
-      <hr />
-      <div className="my-8">
-        <div className="font-signika text-xl font-semibold mb-4">
-          Get in touch
-        </div>
-        <div className="flex flex-wrap">
-          <div className="p-3 rounded-md bg-gray-300 shadow-xl mr-4 my-2 transition ease-in-out duration-300 hover:-translate-y-2 hover:bg-gray-400">
-            <img src={github} alt="github" className="w-6" />
-          </div>
-          <div className="p-3 rounded-md bg-gray-300 shadow-xl mr-4 my-2 transition ease-in-out duration-300 hover:-translate-y-2 hover:bg-gray-400">
-            <img src={instagram} alt="instagram" className="w-6" />
-          </div>
-          <div className="p-3 rounded-md bg-gray-300 shadow-xl mr-4 my-2 transition ease-in-out duration-300 hover:-translate-y-2 hover:bg-gray-400">
-            <img src={facebook} alt="facebook" className="w-6" />
-          </div>
-          <div className="p-3 rounded-md bg-gray-300 shadow-xl mr-4 my-2 transition ease-in-out duration-300 hover:-translate-y-2 hover:bg-gray-400">
-            <img src={linkedin} alt="linkedin" className="w-6" />
-          </div>
-          <div className="p-3 rounded-md bg-gray-300 shadow-xl mr-4 my-2 transition ease-in-out duration-300 hover:-translate-y-2 hover:bg-gray-400">
-            <img src={email} alt="email" className="w-6" />
-          </div>
-        </div>
+      <hr className='border'/>
+      <div className='text-gray-600 font-bold my-5 mx-4 flex flex-col'>
+        <NavLink to="/" className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center">
+          <img src={home} alt="home" className='w-7 h-7 mr-1'/>
+          <div className=''>Home</div>
+        </NavLink>
+        <NavLink to="/project" className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center">
+          <img src={project} alt="project" className='w-7 h-7 mr-1'/>
+          <div className=''>Project</div>
+        </NavLink>
+        <NavLink to="/resume" className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center">
+          <img src={blog} alt="blog" className='w-7 h-7 mr-1'/>
+          <div className=''>Blog</div>
+        </NavLink>
+        <NavLink to="/blog" className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center">
+          <img src={resume} alt="resume" className='w-7 h-7 mr-1'/>
+          <div className=''>Resume</div>
+        </NavLink>
+        <NavLink to="/contact" className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center">
+          <img src={contact} alt="contact" className='w-7 h-7 mr-1'/>
+          <div className=''>Contact</div>
+        </NavLink>
       </div>
     </aside>
-  );
+  )
 }

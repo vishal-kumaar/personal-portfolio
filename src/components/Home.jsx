@@ -1,60 +1,88 @@
 import React from "react";
-import vishalKumar from "../assets/images/vishalKumar.png";
+import { greetings } from "../utils/portfolio";
+import developer from "../assets/images/developer.svg";
+import { socialLinks } from "../utils/portfolio";
+import linkedin from "../assets/images/linkedin.svg";
 import github from "../assets/images/github.svg";
 import instagram from "../assets/images/instagram.svg";
 import facebook from "../assets/images/facebook.svg";
-import linkedin from "../assets/images/linkedin.svg";
-import email from "../assets/images/email.svg";
+import twitter from "../assets/images/twitter.svg";
+import file from "../assets/images/file.svg";
 
-export default function Home(props) {
+export default function Home() {
   return (
-    <>
-      <div
-        className={`px-5 md:px-10 flex justify-between items-center flex-col-reverse md:flex-row transition-all duration-300 ease-in-out ${props.opacity}`}
-      >
-        <div className="py-6">
-          <div className="text-gray-300 text-lg font-[monospace] mb-4">
-            Welcome to my porfolio site!
-          </div>
-          <div className="">
-            <div className="text-red-600 text-5xl font-signika mb-3">
-              Vishal Kumar
+    <main className="flex justify-center items-center flex-col-reverse lg:flex-row text-white my-7 mx-4">
+      <section className="max-w-2xl">
+        <div className="text-4xl font-bold font-[arial] mb-6">
+          {greetings.title}
+        </div>
+        <div className="text-xl font-firasans mb-12">
+          {greetings.description}
+        </div>
+        <div className="flex item-center mb-12">
+          {socialLinks.linkedin && (
+            <a
+              href={socialLinks.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="bg-blue-600 rounded-full p-2 mr-2 shadow-xl shadow-black/30 outline-white transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:shadow-black/80"
+            >
+              <img src={linkedin} alt="linkedin" className="w-6 invert" />
+            </a>
+          )}
+          {socialLinks.github && (
+            <a
+              href={socialLinks.github}
+              target="_blank"
+              rel="noreferrer"
+              className="bg-black rounded-full p-2 mr-2 shadow-xl shadow-black/30 outline-white transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-black/80 hover:shadow-black/80"
+            >
+              <img src={github} alt="github" className="w-6 invert" />
+            </a>
+          )}
+          {socialLinks.facebook && (
+            <a
+              href={socialLinks.facebook}
+              target="_blank"
+              rel="noreferrer"
+              className="bg-blue-800 rounded-full p-2 mr-2 shadow-xl shadow-black/30 outline-white transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-blue-900 hover:shadow-black/80"
+            >
+              <img src={facebook} alt="facebook" className="w-6 invert" />
+            </a>
+          )}
+          {socialLinks.instagram && (
+            <a
+              href={socialLinks.instagram}
+              target="_blank"
+              rel="noreferrer"
+              className="bg-red-700 rounded-full p-2 mr-2 shadow-xl shadow-black/30 outline-white transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-red-800 hover:shadow-black/80"
+            >
+              <img src={instagram} alt="facebook" className="w-6 invert" />
+            </a>
+          )}
+          {socialLinks.twitter && (
+            <a
+              href={socialLinks.twitter}
+              target="_blank"
+              rel="noreferrer"
+              className="bg-blue-500 rounded-full p-2 mr-2 shadow-xl shadow-black/30 outline-white transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-black/80"
+            >
+              <img src={twitter} alt="twitter" className="w-6 invert" />
+            </a>
+          )}
+        </div>
+        <div>
+          <button className="bg-white flex items-center py-2 px-4 rounded shadow-xl shadow-black/20 outline-black  transition ease-in-out duration-300 hover:-translate-y-1 hover:shadow-black/30">
+            <img src={file} alt="resume" className="w-4" />
+            <div className="ml-2 text-sm font-bold font-signika text-black/90">
+              SEE MY RESUME
             </div>
-            <div className="text-white text-4xl font-medium mb-4 font-[arial]">
-              a Web Developer
-            </div>
-          </div>
-          <div className="text-gray-200 text-lg font-medium">
-            Building a successful product is a challenge. I am highly energetic
-            in user experience design, interfaces and web development.
-          </div>
+          </button>
         </div>
-        <div className="py-6">
-          <img src={vishalKumar} alt="vishal-kumar" className="w-96" />
-        </div>
-      </div>
-      <div className="my-8 px-5 sm:px-10 md:px-28 lg:px-48 xl:px-64 2xl:px-80">
-        <div className="font-firasans text-lg font-bold mb-4 text-white text-center">
-          Get in touch
-        </div>
-        <div className="flex flex-wrap justify-between">
-          <div className="p-3 rounded-md bg-gray-300 shadow-xl my-2 transition ease-in-out duration-300 hover:-translate-y-2 hover:bg-gray-400">
-            <img src={github} alt="github" className="w-6" />
-          </div>
-          <div className="p-3 rounded-md bg-gray-300 shadow-xl my-2 transition ease-in-out duration-300 hover:-translate-y-2 hover:bg-gray-400">
-            <img src={instagram} alt="instagram" className="w-6" />
-          </div>
-          <div className="p-3 rounded-md bg-gray-300 shadow-xl my-2 transition ease-in-out duration-300 hover:-translate-y-2 hover:bg-gray-400">
-            <img src={facebook} alt="facebook" className="w-6" />
-          </div>
-          <div className="p-3 rounded-md bg-gray-300 shadow-xl my-2 transition ease-in-out duration-300 hover:-translate-y-2 hover:bg-gray-400">
-            <img src={linkedin} alt="linkedin" className="w-6" />
-          </div>
-          <div className="p-3 rounded-md bg-gray-300 shadow-xl my-2 transition ease-in-out duration-300 hover:-translate-y-2 hover:bg-gray-400">
-            <img src={email} alt="email" className="w-6" />
-          </div>
-        </div>
-      </div>
-    </>
+      </section>
+      <section className="">
+        <img src={developer} alt="developer" className="w-[30rem]" />
+      </section>
+    </main>
   );
 }
