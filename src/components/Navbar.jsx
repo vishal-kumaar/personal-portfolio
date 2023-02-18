@@ -4,7 +4,7 @@ import { greetings } from "../utils/portfolio";
 import hamburger from "../assets/images/hamburger.svg";
 import { NavLink } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar(props) {
   let [navBg, setNavBg] = useState("");
 
   return (
@@ -52,7 +52,7 @@ export default function Navbar() {
           </NavLink>
         </div>
         <div className="block md:hidden">
-          <img src={hamburger} alt="menu" className="invert w-6" />
+          <img src={hamburger} alt="menu" className="invert w-6" onClick={props.toggleSidebar} />
         </div>
       </nav>
     </Headroom>
