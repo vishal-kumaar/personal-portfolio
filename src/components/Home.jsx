@@ -11,10 +11,13 @@ import file from "../assets/images/file.svg";
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center flex-col-reverse lg:flex-row text-white my-7 mx-4">
+    <main className="flex justify-center items-center flex-col-reverse lg:flex-row text-white h-[90vh] mx-4 my-4 lg:my-0">
       <section className="max-w-2xl">
-        <div className="text-4xl font-bold font-[arial] mb-6">
+        <div className="text-4xl font-bold font-signika mb-4">
           {greetings.title}
+        </div>
+        <div className="text-4xl text-white font-medium font-[arial] mb-6">
+         a {greetings.subtitle[0]}
         </div>
         <div className="text-xl font-firasans mb-12">
           {greetings.description}
