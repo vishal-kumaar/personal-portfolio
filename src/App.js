@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Sidebar from "./components/Sidebar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Skills from "./components/Skills";
+import Footer from "./components/Footer";
 
 function App() {
   const [sidebar, setSidebar] = useState(true);
@@ -33,6 +34,7 @@ function App() {
           }
         ></Route>
       </Routes>
+      <Footer />
     </Router>
   );
 }
