@@ -25,27 +25,27 @@ export const technicalSkills = [
     proficiency: "90%"
   },
   {
-    name: "TAILWIND CSS",
+    name: "Tailwind CSS",
     proficiency: "70%"
   },
   {
-    name: "JAVASCRIPT",
+    name: "JavaScript",
     proficiency: "80%"
   },
   {
-    name: "REACTJS",
+    name: "ReactJs",
     proficiency: "70%"
   },
   {
-    name: "EXPRESSJS",
+    name: "ExpressJs",
     proficiency: "50%"
   },
   {
-    name: "NODEJS",
+    name: "NodeJs",
     proficiency: "30%"
   },
   {
-    name: "PYTHON",
+    name: "Python",
     proficiency: "70%"
   },
 ]

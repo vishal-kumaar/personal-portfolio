@@ -11,7 +11,7 @@ import file from "../assets/images/file.svg";
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center flex-col-reverse lg:flex-row text-white h-[90vh] mx-4 my-4 lg:my-0">
+    <main className="flex justify-center items-center flex-col-reverse lg:flex-row text-white px-6 my-4 lg:my-0">
       <section className="max-w-2xl">
         <div className="text-4xl font-bold font-signika mb-4">
           {greetings.title}
@@ -96,7 +96,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="">
+      <section className="h-[30rem]">
         <img src={developer} alt="developer" className="w-[30rem]" />
       </section>
     </main>

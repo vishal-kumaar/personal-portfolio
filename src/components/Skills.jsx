@@ -1,45 +1,94 @@
 import React, { useEffect, useRef, useState } from "react";
-import { skills } from "../utils/portfolio";
+import { technicalSkills, softSkills } from "../utils/portfolio";
+import seperator from "../assets/images/seperator.svg";
 
 export default function Skills() {
-  const myRef = useRef();
-  const [animate, setAnimate] = useState("-translate-x-full");
+  const myRef1 = useRef();
+  const myRef2 = useRef();
+  const [animate1, setAnimate1] = useState("-translate-x-full");
+  const [animate2, setAnimate2] = useState("-translate-x-full");
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
       if (entry.isIntersecting) {
-        setAnimate("animate-fadeInLeft");
+        setAnimate1("animate-fadeInLeft");
       }
     });
-    observer.observe(myRef.current);
-  }, [animate]);
+    observer.observe(myRef1.current);
+  }, [animate1]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      if (entry.isIntersecting) {
+        setAnimate2("animate-fadeInLeft");
+      }
+      console.log(entries)
+    });
+    observer.observe(myRef2.current);
+  }, [animate2]);
 
   return (
-    <div className="my-20 md:flex md:flex-col items-center mx-4">
-      <h1 className="text-2xl font-semibold font-firasans mb-10 md:mb-6 md:w-[70%]">
-        Technical Skills
-      </h1>
-      <div ref={myRef} className="md:w-[70%]">
-        {skills &&
-          skills.map((skill, index) => (
-            <div className="flex flex-col my-5 overflow-hidden" key={index}>
-              <p className="mb-3 font-signika text-black/70">{skill.name}</p>
-              <div className="relative rounded-lg h-3 w-full md:w-full text-lg border border-white/70 flex items-center bg-transparent">
-                <p
-                  className={`absolute -top-6 text-right text-red-900 text-md font-mono font-semibold overflow-hidden ${animate}`}
-                  style={{ width: skill.proficiency }}
-                >
-                  {skill.proficiency}
-                </p>
-                <div
-                  style={{ width: skill.proficiency }}
-                  className={`bg-red-900 rounded-lg h-2 ${animate}`}
-                ></div>
-              </div>
-            </div>
-          ))}
+    <>
+    <img src={seperator} alt="seperator" className="mt-14"/>
+      <div className="px-6 bg-white">
+        <div className="md:flex md:flex-col items-center py-14">
+          <h1 className="text-2xl font-semibold font-firasans mb-10 md:mb-6 md:w-[70%]">
+            Technical Skills
+          </h1>
+          <div ref={myRef1} className="md:w-[70%]">
+            {technicalSkills &&
+              technicalSkills.map((skill, index) => (
+                <div className="flex flex-col my-5 overflow-hidden" key={index}>
+                  <p className="mb-4 font-signika font-semibold text-black/70">
+                    {skill.name}
+                  </p>
+                  <div className="relative rounded-lg h-3 w-full md:w-full text-lg border border-black/70 flex items-center bg-transparent">
+                    <p
+                      className={`absolute -top-6 text-right text-red-900 text-md font-mono font-semibold overflow-hidden ${animate1}`}
+                      style={{ width: skill.proficiency }}
+                    >
+                      {skill.proficiency}
+                    </p>
+                    <div
+                      style={{ width: skill.proficiency }}
+                      className={`bg-red-900 rounded-lg h-2 ${animate1}`}
+                    ></div>
+                  </div>
+                </div>
+              ))}
+          </div>
+        </div>
+        <hr className="border-black" />
+        <div className="md:flex md:flex-col items-center py-14">
+          <h1 className="text-2xl font-semibold font-firasans mb-10 md:mb-6 md:w-[70%]">
+            Soft Skills
+          </h1>
+          <div ref={myRef2} className="md:w-[70%]">
+            {softSkills &&
+              softSkills.map((skill, index) => (
+                <div className="flex flex-col my-5 overflow-hidden" key={index}>
+                  <p className="mb-4 font-signika font-semibold text-black/70">
+                    {skill.name}
+                  </p>
+                  <div className="relative rounded-lg h-3 w-full md:w-full text-lg border border-black/70 flex items-center bg-transparent">
+                    <p
+                      className={`absolute -top-6 text-right text-red-900 text-md font-mono font-semibold overflow-hidden ${animate2}`}
+                      style={{ width: skill.proficiency }}
+                    >
+                      {skill.proficiency}
+                    </p>
+                    <div
+                      style={{ width: skill.proficiency }}
+                      className={`bg-red-900 rounded-lg h-2 ${animate2}`}
+                    ></div>
+                  </div>
+                </div>
+              ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
