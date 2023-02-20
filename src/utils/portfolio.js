@@ -1,7 +1,7 @@
 export const greetings = {
   name: "Vishal Kumar",
   title: "Hey folks, I'm Vishal",
-  subtitle: ["Web Developer","Learner", "Coder"],
+  subtitle: ["Web Developer", "Coder", "Learner"],
   description:
     "Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web development.",
   resumeLink: "",
@@ -19,7 +19,7 @@ export const socialLinks = {
   twitter: "https://twitter.com/vishalkumar0837",
 };
 
-export const skills = [
+export const technicalSkills = [
   {
     name: "HTML/CSS",
     proficiency: "90%"
@@ -47,5 +47,24 @@ export const skills = [
   {
     name: "PYTHON",
     proficiency: "70%"
+  },
+]
+
+export const softSkills = [
+  {
+    name: "Communication",
+    proficiency: "60%"
+  },
+  {
+    name: "Team Work",
+    proficiency: "80%"
+  },
+  {
+    name: "Problem Solving",
+    proficiency: "70%"
+  },
+  {
+    name: "Time Management",
+    proficiency: "75%"
   },
 ]

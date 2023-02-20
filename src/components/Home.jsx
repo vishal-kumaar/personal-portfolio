@@ -16,8 +16,21 @@ export default function Home() {
         <div className="text-4xl font-bold font-signika mb-4">
           {greetings.title}
         </div>
-        <div className="text-4xl text-white font-medium font-[arial] mb-6">
-         a {greetings.subtitle[0]}
+        <div className="text-4xl text-white font-medium font-[arial] mb-6 inline-block align-top relative w-full">
+          a
+          {greetings.subtitle.length >= 3 && (
+            <>
+              <span className="block opacity-0 overflow-hidden ml-7 absolute top-0 left-0 right-0 animate-bottomToTop">
+                {greetings.subtitle[0]}
+              </span>
+              <span style={{animationDelay: "2s"}} className="block opacity-0 overflow-hidden ml-7 absolute top-0 left-0 right-0 animate-bottomToTop">
+                {greetings.subtitle[1]}
+              </span>
+              <span style={{animationDelay: "4s"}} className="block opacity-0 overflow-hidden ml-7 absolute top-0 left-0 right-0 animate-bottomToTop">
+                {greetings.subtitle[2]}
+              </span>
+            </>
+          )}
         </div>
         <div className="text-xl font-firasans mb-12">
           {greetings.description}
