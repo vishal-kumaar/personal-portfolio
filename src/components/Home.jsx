@@ -13,20 +13,20 @@ export default function Home() {
   return (
     <main className="flex justify-center items-center flex-col-reverse lg:flex-row text-white px-6 my-4 lg:my-0">
       <section className="max-w-2xl">
-        <div className="text-4xl font-bold font-signika mb-4">
+        <div className="text-4xl font-bold font-poppins mb-4">
           {greetings.title}
         </div>
-        <div className="text-4xl text-white font-medium font-[arial] mb-6 inline-block align-top relative w-full">
-          a
+        <div className="text-4xl text-white font-medium font-signika mb-6 relative w-full">
+          I'm
           {greetings.subtitle.length >= 3 && (
             <>
-              <span className="block opacity-0 overflow-hidden ml-7 absolute top-0 left-0 right-0 animate-bottomToTop">
+              <span className="block opacity-0 overflow-hidden ml-14 absolute top-0 left-0 right-0 animate-bottomToTop">
                 {greetings.subtitle[0]}
               </span>
-              <span style={{animationDelay: "2s"}} className="block opacity-0 overflow-hidden ml-7 absolute top-0 left-0 right-0 animate-bottomToTop">
+              <span style={{animationDelay: "2s"}} className="block opacity-0 overflow-hidden ml-14 absolute top-0 left-0 right-0 animate-bottomToTop">
                 {greetings.subtitle[1]}
               </span>
-              <span style={{animationDelay: "4s"}} className="block opacity-0 overflow-hidden ml-7 absolute top-0 left-0 right-0 animate-bottomToTop">
+              <span style={{animationDelay: "4s"}} className="block opacity-0 overflow-hidden ml-14 absolute top-0 left-0 right-0 animate-bottomToTop">
                 {greetings.subtitle[2]}
               </span>
             </>

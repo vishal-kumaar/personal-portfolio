@@ -1,7 +1,7 @@
 export const greetings = {
   name: "Vishal Kumar",
-  title: "Hey folks, I'm Vishal",
-  subtitle: ["Web Developer", "Coder", "Learner"],
+  title: "Hey folks,",
+  subtitle: ["Vishal Kumar","Web Developer", "Coder"],
   description:
     "Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web development.",
   resumeLink: "",
