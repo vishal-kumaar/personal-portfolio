@@ -38,35 +38,35 @@ export default function Sidebar(props) {
           to="/"
           className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
         >
-          <img src={home} alt="home" className="w-6 h-6 mr-2" />
+          <img src={home} alt="" className="w-6 h-6 mr-2" />
           <div className="">Home</div>
         </NavLink>
         <NavLink
-          to="/project"
+          to="/projects"
           className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
         >
-          <img src={project} alt="project" className="w-6 h-6 mr-2" />
-          <div className="">Project</div>
+          <img src={project} alt="" className="w-6 h-6 mr-2" />
+          <div className="">Projects</div>
+        </NavLink>
+        <NavLink
+          to="/blogs"
+          className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
+        >
+          <img src={blog} alt="" className="w-6 h-6 mr-2" />
+          <div className="">Blogs</div>
         </NavLink>
         <NavLink
           to="/resume"
           className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
         >
-          <img src={blog} alt="blog" className="w-6 h-6 mr-2" />
-          <div className="">Blog</div>
-        </NavLink>
-        <NavLink
-          to="/blog"
-          className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
-        >
-          <img src={resume} alt="resume" className="w-6 h-6 mr-2" />
+          <img src={resume} alt="" className="w-6 h-6 mr-2" />
           <div className="">Resume</div>
         </NavLink>
         <NavLink
           to="/contact"
           className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
         >
-          <img src={contact} alt="contact" className="w-6 h-6 mr-2" />
+          <img src={contact} alt="" className="w-6 h-6 mr-2" />
           <div className="">Contact</div>
         </NavLink>
       </div>

@@ -27,16 +27,16 @@ export default function Navbar(props) {
             Home
           </NavLink>
           <NavLink
-            to="/project"
+            to="/projects"
             className="ml-6 p-2 rounded font-roboto outline-white hover:bg-white hover:text-black hover:shadow-md"
           >
-            Project
+            Projects
           </NavLink>
           <NavLink
-            to="/blog"
+            to="/blogs"
             className="ml-6 p-2 rounded font-roboto outline-white hover:bg-white hover:text-black hover:shadow-md"
           >
-            Blog
+            Blogs
           </NavLink>
           <NavLink
             to="/resume"

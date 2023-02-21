@@ -13,7 +13,7 @@ export default function Project() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 10,
-      behavior: "auto",
+      behavior: "smooth",
     });
   };
 
