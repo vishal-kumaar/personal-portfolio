@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
+import Blogs from "./components/Blogs";
 
 function App() {
   const [sidebar, setSidebar] = useState(true);
@@ -34,13 +35,8 @@ function App() {
             </>
           }
         ></Route>
-        <Route
-          exect
-          path="/projects"
-          element={
-            <Projects />
-          }
-        ></Route>
+        <Route exect path="/projects" element={<Projects />}></Route>
+        <Route exect path="/blogs" element={<Blogs />}></Route>
       </Routes>
       <Footer />
     </Router>
