@@ -5,16 +5,18 @@ import hamburger from "../assets/images/hamburger.svg";
 import { NavLink } from "react-router-dom";
 
 export default function Navbar(props) {
-  let [navBg, setNavBg] = useState("");
+  let [navBg, setNavBg] = useState(
+    "bg-gradient-to-r from-sky-500 to-indigo-500"
+  );
 
   return (
     <Headroom
-      onUnfix={() => setNavBg("")}
+      onUnfix={() => setNavBg("bg-gradient-to-r from-sky-500 to-indigo-500")}
       onPin={() => setNavBg("bg-black/80")}
-      className="mt-4"
+      className=""
     >
       <nav
-        className={`text-white flex justify-between items-center px-4 md:px-10 py-3 transition duration-300 ease-in-out ${navBg}`}
+        className={`${props.opacity} text-white flex justify-between items-center px-4 md:px-10 pt-7 pb-3 transition duration-300 ease-in-out ${navBg} transform ease-in-out duration-500`}
       >
         <NavLink to="/" className="font-cursive text-3xl">
           {greetings.name}

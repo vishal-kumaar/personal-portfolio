@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { technicalSkills, softSkills } from "../utils/portfolio";
-import seperator from "../assets/images/seperator.svg";
+import Seperator from "./Seperator";
 
-export default function Skills() {
+export default function Skills(props) {
   const myRef1 = useRef();
   const myRef2 = useRef();
   const [animate1, setAnimate1] = useState("-translate-x-full");
@@ -31,8 +31,8 @@ export default function Skills() {
 
   return (
     <>
-      <img src={seperator} alt="seperator" className="mt-14 w-full h-10" />
-      <div className="px-6 bg-white">
+      <Seperator rotate={"rotate-0"} opacity={props.opacity} />
+      <div className={`px-6 bg-white ${props.opacity}`}>
         <div className="md:flex md:flex-col items-center py-14">
           <h1 className="text-2xl font-semibold font-firasans mb-10 md:mb-6 md:w-[70%]">
             Technical Skills

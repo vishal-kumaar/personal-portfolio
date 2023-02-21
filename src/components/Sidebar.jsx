@@ -20,7 +20,7 @@ export default function Sidebar(props) {
     <aside
       className={`fixed overflow-auto top-0 left-0 h-screen py-8 px-6 bg-white z-10 ${
         props.sidebar ? "-translate-x-96" : "translate-x-0"
-      } ease-in-out duration-500`}
+      } transform ease-in-out duration-500`}
     >
       <div className="flex items-center justify-between">
         <img src={avatar} alt="developer" className="w-16" />

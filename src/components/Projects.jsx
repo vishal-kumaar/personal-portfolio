@@ -4,7 +4,7 @@ import github from "../assets/images/github.svg";
 import globe from "../assets/images/globe.svg";
 import nextIcon from "../assets/images/next.svg";
 
-export default function Project() {
+export default function Project(props) {
   const [firstIndex, setFirstIndex] = useState(0);
   const [lastIndex, setLastIndex] = useState(6);
   const [nextBtn, setNextBtn] = useState("visible");
@@ -38,8 +38,10 @@ export default function Project() {
   };
 
   return (
-    <div className="py-14 bg-white">
-      <h1 className="mb-4 text-3xl font-signika mx-4 md:mx-10 text-black">Projects</h1>
+    <div className={`py-14 bg-white ${props.opacity}`}>
+      <h1 className="mb-4 text-3xl font-signika mx-4 md:mx-10 text-black">
+        Projects
+      </h1>
       <hr className="border-black/40 mx-4 md:mx-10" />
       <div className="flex flex-wrap">
         {projects &&
@@ -79,13 +81,27 @@ export default function Project() {
       </div>
       {projects.length > 6 && (
         <div className="flex justify-between font-signika mx-4 md:mx-10 mt-10">
-          <button onClick={previousProject} className={`${prevBtn} flex items-center bg-blue-700 hover:bg-blue-500 shadow-xl py-1 px-2 text-white ouline-white border-none rounded`}>
-            <img src={nextIcon} alt="previous" className="rotate-180 invert w-3 h-3 mr-[5px]" />
+          <button
+            onClick={previousProject}
+            className={`${prevBtn} flex items-center bg-blue-700 hover:bg-blue-500 shadow-xl py-1 px-2 text-white ouline-white border-none rounded`}
+          >
+            <img
+              src={nextIcon}
+              alt="previous"
+              className="rotate-180 invert w-3 h-3 mr-[5px]"
+            />
             <p>Previous</p>
           </button>
-          <button onClick={nextProject} className={`${nextBtn} flex items-center bg-blue-700 hover:bg-blue-500 shadow-xl py-1 px-2 text-white ouline-white border-none rounded`}>
+          <button
+            onClick={nextProject}
+            className={`${nextBtn} flex items-center bg-blue-700 hover:bg-blue-500 shadow-xl py-1 px-2 text-white ouline-white border-none rounded`}
+          >
             <p>Next</p>
-            <img src={nextIcon} alt="next" className="invert w-3 h-3 ml-[5px]" />
+            <img
+              src={nextIcon}
+              alt="next"
+              className="invert w-3 h-3 ml-[5px]"
+            />
           </button>
         </div>
       )}

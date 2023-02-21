@@ -10,19 +10,22 @@ import Blogs from "./components/Blogs";
 
 function App() {
   const [sidebar, setSidebar] = useState(true);
-  document.body.classList = "bg-gradient-to-r from-sky-500 to-indigo-500";
+  const [opacity, setOpacity] = useState("opacity-100");
+  document.body.classList = "bg-black";
 
   const toggleSidebar = () => {
     if (sidebar === true) {
       setSidebar(false);
+      setOpacity("opacity-30");
     } else {
       setSidebar(true);
+      setOpacity("opacity-100")
     }
   };
 
   return (
     <Router>
-      <Navbar toggleSidebar={toggleSidebar} sidebar={sidebar} />
+      <Navbar toggleSidebar={toggleSidebar} sidebar={sidebar} opacity={opacity} />
       <Sidebar toggleSidebar={toggleSidebar} sidebar={sidebar} />
       <Routes>
         <Route
@@ -30,15 +33,15 @@ function App() {
           path="/"
           element={
             <>
-              <Home />
-              <Skills />
+              <Home opacity={opacity} />
+              <Skills opacity={opacity} />
             </>
           }
         ></Route>
-        <Route exect path="/projects" element={<Projects />}></Route>
-        <Route exect path="/blogs" element={<Blogs />}></Route>
+        <Route exect path="/projects" element={<Projects opacity={opacity} />}></Route>
+        <Route exect path="/blogs" element={<Blogs opacity={opacity} />}></Route>
       </Routes>
-      <Footer />
+      <Footer opacity={opacity} />
     </Router>
   );
 }

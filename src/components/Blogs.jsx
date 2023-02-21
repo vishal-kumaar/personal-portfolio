@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { blogs } from "../utils/portfolio";
 import nextIcon from "../assets/images/next.svg";
 
-export default function Blog() {
+export default function Blog(props) {
   const [firstIndex, setFirstIndex] = useState(0);
   const [lastIndex, setLastIndex] = useState(6);
   const [nextBtn, setNextBtn] = useState("visible");
@@ -36,8 +36,12 @@ export default function Blog() {
   };
 
   return (
-    <div className="py-14 bg-white">
-      <h1 className="mb-4 text-3xl font-signika text-black mx-4 md:mx-10">Blogs</h1>
+    <div
+      className={`${props.opacity} py-14 bg-white transform ease-in-out duration-500`}
+    >
+      <h1 className="mb-4 text-3xl font-signika text-black mx-4 md:mx-10">
+        Blogs
+      </h1>
       <hr className="border-black/40 mx-4 md:mx-10" />
       <div className="flex flex-wrap">
         {blogs &&
@@ -62,7 +66,9 @@ export default function Blog() {
                   {blog.readTime}
                 </p>
               </div>
-              <h1 className="font-signika text-xl text-black mt-2">{blog.title}</h1>
+              <h1 className="font-signika text-xl text-black mt-2">
+                {blog.title}
+              </h1>
               <p className="font-firasans text-base text-slate-600">
                 {blog.subtitle}
               </p>

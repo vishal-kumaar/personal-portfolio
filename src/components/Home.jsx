@@ -9,9 +9,11 @@ import facebook from "../assets/images/facebook.svg";
 import twitter from "../assets/images/twitter.svg";
 import file from "../assets/images/file.svg";
 
-export default function Home() {
+export default function Home(props) {
   return (
-    <main className="flex justify-center items-center flex-col-reverse lg:flex-row text-white px-6 my-4 lg:my-0">
+    <main
+      className={`${props.opacity} bg-gradient-to-r from-sky-500 to-indigo-500 flex justify-center items-center flex-col-reverse lg:flex-row text-white px-6 pt-4 lg:my-0 transform ease-in-out duration-500`}
+    >
       <section className="max-w-2xl">
         <div className="text-4xl font-bold font-poppins mb-4">
           {greetings.title}
