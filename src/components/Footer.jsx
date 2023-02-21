@@ -5,7 +5,7 @@ import seperator from "../assets/images/seperator.svg";
 export default function Footer() {
   return (
     <>
-      <img src={seperator} alt="" className="rotate-180" />
+      <img src={seperator} alt="" className="rotate-180 w-full h-10" />
       <footer className="bg-transparent py-10">
         <img src={avatar} alt="avatar" className="w-16 m-auto" />
         <h1 className="text-white/90 text-md font-poppins font-medium text-center mt-2">
