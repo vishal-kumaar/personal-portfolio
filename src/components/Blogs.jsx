@@ -4,7 +4,7 @@ import nextIcon from "../assets/images/next.svg";
 
 export default function Blog() {
   const [firstIndex, setFirstIndex] = useState(0);
-  const [lastIndex, setLastIndex] = useState(4);
+  const [lastIndex, setLastIndex] = useState(6);
   const [nextBtn, setNextBtn] = useState("visible");
   const [prevBtn, setPrevBtn] = useState("invisible");
 
@@ -16,30 +16,30 @@ export default function Blog() {
   };
 
   const nextBlog = () => {
-    if (lastIndex + 4 >= blogs.length) {
+    if (lastIndex + 6 >= blogs.length) {
       setNextBtn("invisible");
     }
     setFirstIndex(lastIndex);
-    setLastIndex(lastIndex + 4);
+    setLastIndex(lastIndex + 6);
     setPrevBtn("visible");
     scrollToTop();
   };
 
   const previousBlog = () => {
-    if (firstIndex === 4) {
+    if (firstIndex === 6) {
       setPrevBtn("invisible");
     }
     setLastIndex(firstIndex);
-    setFirstIndex(firstIndex - 4);
+    setFirstIndex(firstIndex - 6);
     setNextBtn("visible");
     scrollToTop();
   };
 
   return (
-    <div className="px-4 md:px-10 py-14 bg-white">
-      <h1 className="mb-4 text-3xl font-signika text-black">Blogs</h1>
-      <hr className="border-black/40" />
-      <div className="flex flex-wrap justify-between">
+    <div className="py-14 bg-white">
+      <h1 className="mb-4 text-3xl font-signika text-black mx-4 md:mx-10">Blogs</h1>
+      <hr className="border-black/40 mx-4 md:mx-10" />
+      <div className="flex flex-wrap">
         {blogs &&
           blogs.slice(firstIndex, lastIndex).map((blog, index) => (
             <a
@@ -47,30 +47,30 @@ export default function Blog() {
               target="_blank"
               rel="noreferrer"
               key={index}
-              className="w-full md:w-[48%] mt-10 p-4 rounded-lg bg-black/5 mb-10 hover:shadow-2xl hover:scale-105 hover:bg-black/0 transition ease-in-out duration-300"
+              className="w-full sm:w-[44%] lg:w-[28%] mx-4 sm:mx-[3%] lg:mx-[2.66%] mt-10 p-4 rounded-lg bg-black/5 mb-4 hover:shadow-2xl hover:scale-105 hover:bg-black/0 transition ease-in-out duration-300"
             >
               <img
                 src={blog.coverImg}
                 alt={blog.title}
                 className="w-full rounded-xl"
               />
-              <div className="flex justify-between mt-3">
-                <p className="text-red-600 font-medium font-poppins text-base">
+              <div className="flex justify-between items-center mt-3">
+                <p className="text-teal-700 font-medium font-poppins text-base">
                   {blog.date}
                 </p>
-                <p className="text-black font-bold font-poppins">
+                <p className="text-red-500 text-sm font-bold font-poppins">
                   {blog.readTime}
                 </p>
               </div>
-              <h1 className="font-signika text-xl mt-2">{blog.title}</h1>
-              <p className="font-firasans text-base text-black">
+              <h1 className="font-signika text-xl text-black mt-2">{blog.title}</h1>
+              <p className="font-firasans text-base text-slate-600">
                 {blog.subtitle}
               </p>
             </a>
           ))}
       </div>
-      {blogs.length > 4 && (
-        <div className="flex justify-between font-signika">
+      {blogs.length > 6 && (
+        <div className="flex justify-between font-signika mx-4 md:mx-10 mt-10">
           <button
             onClick={previousBlog}
             className={`${prevBtn} flex items-center bg-blue-700 hover:bg-blue-500 shadow-xl py-1 px-2 text-white ouline-white border-none rounded`}
