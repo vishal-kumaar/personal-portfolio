@@ -23,10 +23,16 @@ export default function Home() {
               <span className="block opacity-0 overflow-hidden ml-14 absolute top-0 left-0 right-0 animate-bottomToTop">
                 {greetings.subtitle[0]}
               </span>
-              <span style={{animationDelay: "2s"}} className="block opacity-0 overflow-hidden ml-14 absolute top-0 left-0 right-0 animate-bottomToTop">
+              <span
+                style={{ animationDelay: "2s" }}
+                className="block opacity-0 overflow-hidden ml-14 absolute top-0 left-0 right-0 animate-bottomToTop"
+              >
                 {greetings.subtitle[1]}
               </span>
-              <span style={{animationDelay: "4s"}} className="block opacity-0 overflow-hidden ml-14 absolute top-0 left-0 right-0 animate-bottomToTop">
+              <span
+                style={{ animationDelay: "4s" }}
+                className="block opacity-0 overflow-hidden ml-14 absolute top-0 left-0 right-0 animate-bottomToTop"
+              >
                 {greetings.subtitle[2]}
               </span>
             </>

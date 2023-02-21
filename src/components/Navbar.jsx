@@ -52,7 +52,12 @@ export default function Navbar(props) {
           </NavLink>
         </div>
         <div className="block md:hidden">
-          <img src={hamburger} alt="menu" className="invert w-6" onClick={props.toggleSidebar} />
+          <img
+            src={hamburger}
+            alt="menu"
+            className="invert w-6"
+            onClick={props.toggleSidebar}
+          />
         </div>
       </nav>
     </Headroom>

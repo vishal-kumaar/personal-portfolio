@@ -23,7 +23,7 @@ export default function Sidebar(props) {
       } ease-in-out duration-500`}
     >
       <div className="flex items-center justify-between">
-          <img src={avatar} alt="developer" className="w-16" />
+        <img src={avatar} alt="developer" className="w-16" />
         <img
           src={close}
           alt="close"
@@ -31,7 +31,9 @@ export default function Sidebar(props) {
           onClick={props.toggleSidebar}
         />
       </div>
-      <h1 className="font-firasans font-bold mt-3 mb-5 text-lg text-black/80">{greetings.name}</h1>
+      <h1 className="font-firasans font-bold mt-3 mb-5 text-lg text-black/80">
+        {greetings.name}
+      </h1>
       <hr className="border" />
       <div className="text-gray-600 font-bold mt-5 mb-20 flex flex-col">
         <NavLink

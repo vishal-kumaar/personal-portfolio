@@ -24,14 +24,14 @@ export default function Skills() {
       if (entry.isIntersecting) {
         setAnimate2("animate-fadeInLeft");
       }
-      console.log(entries)
+      console.log(entries);
     });
     observer.observe(myRef2.current);
   }, [animate2]);
 
   return (
     <>
-    <img src={seperator} alt="seperator" className="mt-14 w-full h-10"/>
+      <img src={seperator} alt="seperator" className="mt-14 w-full h-10" />
       <div className="px-6 bg-white">
         <div className="md:flex md:flex-col items-center py-14">
           <h1 className="text-2xl font-semibold font-firasans mb-10 md:mb-6 md:w-[70%]">
