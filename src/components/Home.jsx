@@ -103,7 +103,7 @@ export default function Home(props) {
           </a>
         </div>
       </section>
-      <section className="lg:ml-10 mb-8 lg:mb-0 h-64 lg:h-7">
+      <section className="lg:ml-10 mb-8 lg:mb-0 h-64 lg:h-72">
         <img src={user.profilePic} alt="" className="rounded-full w-64 lg:w-72"/>
       </section>
     </main>
