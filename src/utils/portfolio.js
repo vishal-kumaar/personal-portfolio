@@ -1,3 +1,4 @@
+import resume from "../assets/vishal-resume.pdf";
 import project01 from "../assets/projects/project01.webp";
 import project02 from "../assets/projects/project02.webp";
 import project03 from "../assets/projects/project03.webp";
@@ -25,8 +26,8 @@ export const greetings = {
   title: "Hey folks,",
   subtitle: ["Vishal Kumar", "Web Developer", "Coder"],
   description:
-    "Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web development.",
-  resumeLink: "",
+    "I am a passionate and hardworking person who loves learning new things. I work well on my own and in groups. My goal is to be able to contribute fully as soon as possible.",
+  resumeLink: resume,
 };
 
 export const socialLinks = {

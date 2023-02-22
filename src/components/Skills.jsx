@@ -24,7 +24,6 @@ export default function Skills(props) {
       if (entry.isIntersecting) {
         setAnimate2("animate-fadeInLeft");
       }
-      console.log(entries);
     });
     observer.observe(myRef2.current);
   }, [animate2]);
