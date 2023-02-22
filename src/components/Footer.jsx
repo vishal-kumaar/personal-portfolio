@@ -7,7 +7,7 @@ export default function Footer(props) {
     <>
       <Seperator rotate={"rotate-180"} opacity={props.opacity} />
       <footer
-        className={`py-10 bg-gradient-to-r from-sky-500 to-indigo-500 ${props.opacity}`}
+        className={`py-10 bg-gradient-to-r from-sky-500 to-indigo-500 ${props.opacity} transition-opacity duration-500 ease-in-out`}
       >
         <img src={avatar} alt="avatar" className="w-16 m-auto" />
         <h1 className="text-white/90 text-md font-poppins font-medium text-center mt-2">

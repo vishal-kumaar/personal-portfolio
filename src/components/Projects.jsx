@@ -38,7 +38,7 @@ export default function Project(props) {
   };
 
   return (
-    <div className={`py-14 bg-white ${props.opacity}`}>
+    <div className={`py-14 bg-white ${props.opacity} transition-opacity duration-500 ease-in-out`}>
       <h1 className="mb-4 text-3xl font-signika mx-4 md:mx-10 text-black">
         Projects
       </h1>

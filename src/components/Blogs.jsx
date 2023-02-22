@@ -37,7 +37,7 @@ export default function Blog(props) {
 
   return (
     <div
-      className={`${props.opacity} py-14 bg-white transform ease-in-out duration-500`}
+      className={`${props.opacity} py-14 bg-white transition-opacity ease-in-out duration-500`}
     >
       <h1 className="mb-4 text-3xl font-signika text-black mx-4 md:mx-10">
         Blogs
