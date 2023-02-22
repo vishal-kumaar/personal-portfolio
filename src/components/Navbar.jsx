@@ -13,10 +13,10 @@ export default function Navbar(props) {
     <Headroom
       onUnfix={() => setNavBg("bg-gradient-to-r from-sky-500 to-indigo-500")}
       onPin={() => setNavBg("bg-black/80")}
-      className=""
+      className="bg-transparent"
     >
       <nav
-        className={`${props.opacity} text-white flex justify-between items-center px-4 md:px-10 pt-7 pb-3 transition duration-300 ease-in-out ${navBg} transform ease-in-out duration-500`}
+        className={`${props.opacity} text-white flex justify-between items-center px-4 md:px-10 pt-7 pb-3 ${navBg} transform ease-in-out duration-500`}
       >
         <NavLink to="/" className="font-cursive text-3xl">
           {greetings.name}
@@ -39,12 +39,6 @@ export default function Navbar(props) {
             className="ml-6 p-2 rounded font-roboto outline-white hover:bg-white hover:text-black hover:shadow-md"
           >
             Blogs
-          </NavLink>
-          <NavLink
-            to="/resume"
-            className="ml-6 p-2 rounded font-roboto outline-white hover:bg-white hover:text-black hover:shadow-md"
-          >
-            Resume
           </NavLink>
           <NavLink
             to="/contact"
