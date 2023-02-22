@@ -5,7 +5,7 @@ import close from "../assets/images/close.svg";
 import home from "../assets/images/home.svg";
 import project from "../assets/images/project.svg";
 import blog from "../assets/images/blog.svg";
-import { greetings } from "../utils/portfolio";
+import { user } from "../utils/portfolio";
 import contact from "../assets/images/contact.svg";
 import { socialLinks } from "../utils/portfolio";
 import linkedin from "../assets/images/linkedin.svg";
@@ -32,7 +32,7 @@ export default function Sidebar(props) {
           />
         </div>
         <h1 className="font-firasans font-bold mt-3 text-lg text-black/80">
-          {greetings.name}
+          {user.name}
         </h1>
         <hr className="border mt-5" />
         <div className="text-gray-600 font-bold mt-5 mb-20 flex flex-col">

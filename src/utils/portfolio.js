@@ -21,7 +21,7 @@ import project19 from "../assets/projects/project19.webp";
 import project20 from "../assets/projects/project20.webp";
 import project21 from "../assets/projects/project21.webp";
 
-export const greetings = {
+export const user = {
   name: "Vishal Kumar",
   title: "Hey folks,",
   subtitle: ["Vishal Kumar", "Web Developer", "Coder"],

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Headroom from "react-headroom";
-import { greetings } from "../utils/portfolio";
+import { user } from "../utils/portfolio";
 import hamburger from "../assets/images/hamburger.svg";
 import { NavLink } from "react-router-dom";
 
@@ -19,7 +19,7 @@ export default function Navbar(props) {
         className={`${props.opacity} text-white flex justify-between items-center px-4 md:px-10 pt-7 pb-3 ${navBg} transform ease-in-out duration-500`}
       >
         <NavLink to="/" className="font-cursive text-3xl">
-          {greetings.name}
+          {user.name}
         </NavLink>
         <div className="hidden md:block">
           <NavLink
