@@ -1,4 +1,5 @@
-import resume from "../assets/vishal-resume.pdf";
+import resume from "../assets/resume.pdf";
+import profilePic from "../assets/images/profilePic.jpg";
 import project01 from "../assets/projects/project01.webp";
 import project02 from "../assets/projects/project02.webp";
 import project03 from "../assets/projects/project03.webp";
@@ -27,6 +28,7 @@ export const user = {
   subtitle: ["Vishal Kumar", "Web Developer", "Coder"],
   description:
     "I am a passionate and hardworking person who loves learning new things. I work well on my own and in groups. My goal is to be able to contribute fully as soon as possible.",
+  profilePic: profilePic,
   resumeLink: resume,
 };
 

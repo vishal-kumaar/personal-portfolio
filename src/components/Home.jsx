@@ -1,7 +1,5 @@
 import React from "react";
-import { greetings } from "../utils/portfolio";
-import developer from "../assets/images/developer.svg";
-import { socialLinks } from "../utils/portfolio";
+import { user, socialLinks } from "../utils/portfolio";
 import linkedin from "../assets/images/linkedin.svg";
 import github from "../assets/images/github.svg";
 import instagram from "../assets/images/instagram.svg";
@@ -12,37 +10,33 @@ import file from "../assets/images/file.svg";
 export default function Home(props) {
   return (
     <main
-      className={`${props.opacity} bg-gradient-to-r from-sky-500 to-indigo-500 flex justify-center items-center flex-col-reverse lg:flex-row text-white px-6 pt-4 lg:my-0 transition-opacity ease-in-out duration-500`}
+      className={`${props.opacity} bg-gradient-to-r from-sky-500 to-indigo-500 flex justify-center items-center flex-col-reverse lg:flex-row text-white px-6 py-14 lg:my-0 transition-opacity ease-in-out duration-500`}
     >
       <section className="max-w-2xl">
-        <div className="text-4xl font-bold font-poppins mb-4">
-          {greetings.title}
-        </div>
+        <div className="text-4xl font-bold font-poppins mb-4">{user.title}</div>
         <div className="text-4xl text-white font-medium font-signika mb-6 relative w-full">
           I'm
-          {greetings.subtitle.length >= 3 && (
+          {user.subtitle.length >= 3 && (
             <>
               <span className="block opacity-0 overflow-hidden ml-14 absolute top-0 left-0 right-0 animate-bottomToTop">
-                {greetings.subtitle[0]}
+                {user.subtitle[0]}
               </span>
               <span
                 style={{ animationDelay: "2s" }}
                 className="block opacity-0 overflow-hidden ml-14 absolute top-0 left-0 right-0 animate-bottomToTop"
               >
-                {greetings.subtitle[1]}
+                {user.subtitle[1]}
               </span>
               <span
                 style={{ animationDelay: "4s" }}
                 className="block opacity-0 overflow-hidden ml-14 absolute top-0 left-0 right-0 animate-bottomToTop"
               >
-                {greetings.subtitle[2]}
+                {user.subtitle[2]}
               </span>
             </>
           )}
         </div>
-        <div className="text-xl font-firasans mb-12">
-          {greetings.description}
-        </div>
+        <div className="text-xl font-firasans mb-12">{user.description}</div>
         <div className="flex item-center mb-12">
           {socialLinks.linkedin && (
             <a
@@ -97,7 +91,7 @@ export default function Home(props) {
         </div>
         <div>
           <a
-            href={greetings.resumeLink}
+            href={user.resumeLink}
             target="_blank"
             rel="noreferrer"
             className="w-fit bg-white flex items-center py-2 px-4 rounded shadow-xl shadow-black/20 outline-black transition ease-in-out duration-300 hover:-translate-y-1 hover:shadow-black/30"
@@ -109,8 +103,8 @@ export default function Home(props) {
           </a>
         </div>
       </section>
-      <section className="h-[30rem]">
-        <img src={developer} alt="developer" className="w-[30rem]" />
+      <section className="lg:ml-10 mb-8 lg:mb-0">
+        <img src={user.profilePic} alt="" className="rounded-full w-64 lg:w-72"/>
       </section>
     </main>
   );
