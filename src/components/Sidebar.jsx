@@ -17,7 +17,7 @@ import twitter from "../assets/images/twitter.svg";
 export default function Sidebar(props) {
   return (
     <aside
-      className={`flex flex-col justify-between fixed overflow-auto top-0 left-0 h-screen py-8 px-6 bg-white z-10 ${
+      className={`flex flex-col justify-between fixed overflow-auto top-0 left-0 h-screen pt-8 px-6 bg-white z-10 ${
         props.sidebar ? "-translate-x-96" : "translate-x-0"
       } transform ease-in-out duration-500`}
     >
@@ -35,7 +35,7 @@ export default function Sidebar(props) {
           {user.name}
         </h1>
         <hr className="border mt-5" />
-        <div className="text-gray-600 font-bold mt-5 mb-20 flex flex-col">
+        <div className="text-gray-600 font-bold mt-5 flex flex-col">
           <NavLink
             to="/"
             className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
@@ -66,8 +66,8 @@ export default function Sidebar(props) {
           </NavLink>
         </div>
       </div>
-      <div className="mt-10">
-        <hr className="border mb-5" />
+      <div className="mb-20">
+        <hr className="border mb-10" />
         <h1 className="text-xl font-bold font-firasans text-black/90 drop-shadow-lg">
           GET IN TOUCH
         </h1>
