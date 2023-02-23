@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 import Blogs from "./components/Blogs";
+import Contact from "./components/Contact";
 
 function App() {
   const [sidebar, setSidebar] = useState(true);
@@ -40,6 +41,7 @@ function App() {
         ></Route>
         <Route exect path="/projects" element={<Projects opacity={opacity} />}></Route>
         <Route exect path="/blogs" element={<Blogs opacity={opacity} />}></Route>
+        <Route exect path="/contact" element={<Contact opacity={opacity} />}></Route>
       </Routes>
       <Footer opacity={opacity} />
     </Router>

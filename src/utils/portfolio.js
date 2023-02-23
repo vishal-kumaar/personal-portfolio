@@ -30,6 +30,7 @@ export const user = {
     "I am a passionate and hardworking person who loves learning new things. I work well on my own and in groups. My goal is to be able to contribute fully as soon as possible.",
   profilePic: profilePic,
   resumeLink: resume,
+  gmail: "vishal.kumar08376@gmail.com",
 };
 
 export const socialLinks = {
@@ -38,6 +39,7 @@ export const socialLinks = {
   instagram: "https://www.instagram.com/_vishal.kumar07/",
   facebook: "https://www.facebook.com/im.vishaal.kumar/",
   twitter: "https://twitter.com/vishalkumar0837",
+  hashnode: "https://hashnode.com/@vishaalkumar",
 };
 
 export const technicalSkills = [
