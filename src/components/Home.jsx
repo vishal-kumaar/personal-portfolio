@@ -43,7 +43,7 @@ export default function Home(props) {
               href={socialLinks.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="bg-blue-600 rounded-full p-2 mr-2 shadow-xl shadow-black/30 outline-white transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:shadow-black/80"
+              className="bg-blue-600 rounded-full p-2 mr-2 shadow-xl shadow-black/30 outline-white transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:shadow-black/80 h-10"
             >
               <img src={linkedin} alt="linkedin" className="w-6 invert" />
             </a>
@@ -53,7 +53,7 @@ export default function Home(props) {
               href={socialLinks.github}
               target="_blank"
               rel="noreferrer"
-              className="bg-black rounded-full p-2 mr-2 shadow-xl shadow-black/30 outline-white transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-black/80 hover:shadow-black/80"
+              className="bg-black rounded-full p-2 mr-2 shadow-xl shadow-black/30 outline-white transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-black/80 hover:shadow-black/80 h-10"
             >
               <img src={github} alt="github" className="w-6 invert" />
             </a>
@@ -63,7 +63,7 @@ export default function Home(props) {
               href={socialLinks.facebook}
               target="_blank"
               rel="noreferrer"
-              className="bg-blue-800 rounded-full p-2 mr-2 shadow-xl shadow-black/30 outline-white transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-blue-900 hover:shadow-black/80"
+              className="bg-blue-800 rounded-full p-2 mr-2 shadow-xl shadow-black/30 outline-white transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-blue-900 hover:shadow-black/80 h-10"
             >
               <img src={facebook} alt="facebook" className="w-6 invert" />
             </a>
@@ -73,7 +73,7 @@ export default function Home(props) {
               href={socialLinks.instagram}
               target="_blank"
               rel="noreferrer"
-              className="bg-red-700 rounded-full p-2 mr-2 shadow-xl shadow-black/30 outline-white transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-red-800 hover:shadow-black/80"
+              className="bg-red-700 rounded-full p-2 mr-2 shadow-xl shadow-black/30 outline-white transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-red-800 hover:shadow-black/80 h-10"
             >
               <img src={instagram} alt="facebook" className="w-6 invert" />
             </a>
@@ -83,7 +83,7 @@ export default function Home(props) {
               href={socialLinks.twitter}
               target="_blank"
               rel="noreferrer"
-              className="bg-blue-500 rounded-full p-2 mr-2 shadow-xl shadow-black/30 outline-white transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-black/80"
+              className="bg-blue-500 rounded-full p-2 mr-2 shadow-xl shadow-black/30 outline-white transition ease-in-out duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-black/80 h-10"
             >
               <img src={twitter} alt="twitter" className="w-6 invert" />
             </a>
@@ -94,7 +94,7 @@ export default function Home(props) {
             href={user.resumeLink}
             target="_blank"
             rel="noreferrer"
-            className="w-fit bg-white flex items-center py-2 px-4 rounded shadow-xl shadow-black/20 outline-black transition ease-in-out duration-300 hover:-translate-y-1 hover:shadow-black/30"
+            className="w-fit bg-white flex items-center py-2 px-4 rounded shadow-xl shadow-black/20 outline-black transition ease-in-out duration-300 hover:-translate-y-1 hover:shadow-black/30 h-10"
           >
             <img src={file} alt="resume" className="w-4" />
             <div className="ml-2 text-sm font-bold font-signika text-black/90">
