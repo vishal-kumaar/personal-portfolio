@@ -14,15 +14,15 @@ export default function Contact(props) {
       <div className="mr-auto ml-auto md:mr-32 md:ml-0 w-fit">
         <img src={user.profilePic} alt="" className="rounded-full w-52 mb-3" />
         <h1 className="font-signika text-black text-xl">{user.name}</h1>
-        <p className="font-poppins text-md text-black mb-5">{user.gmail}</p>
+        <p className="font-poppins text-md text-black mb-4">{user.gmail}</p>
         <a
           href={user.resumeLink}
           target="_blank"
           rel="noreferrer"
-          className="w-fit bg-black/5 flex items-center py-2 px-4 rounded shadow-xl shadow-black/20 outline-black transition ease-in-out duration-300 hover:-translate-y-1 hover:shadow-black/30 h-10"
+          className="w-fit bg-black flex items-center py-2 px-4 rounded shadow-md shadow-black/20 outline-black transition ease-in-out duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-black/30 h-10"
         >
-          <img src={file} alt="resume" className="w-4" />
-          <div className="ml-2 text-sm font-bold font-signika text-black/90">
+          <img src={file} alt="resume" className="w-4 invert" />
+          <div className="ml-2 text-sm font-bold font-signika text-white">
             SEE MY RESUME
           </div>
         </a>
