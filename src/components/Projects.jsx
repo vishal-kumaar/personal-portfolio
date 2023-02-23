@@ -6,7 +6,7 @@ import nextIcon from "../assets/images/next.svg";
 
 export default function Project(props) {
   const [firstIndex, setFirstIndex] = useState(0);
-  const [lastIndex, setLastIndex] = useState(6);
+  const [lastIndex, setLastIndex] = useState(9);
   const [nextBtn, setNextBtn] = useState("visible");
   const [prevBtn, setPrevBtn] = useState("invisible");
 
@@ -18,21 +18,21 @@ export default function Project(props) {
   };
 
   const nextProject = () => {
-    if (lastIndex + 6 >= projects.length) {
+    if (lastIndex + 9 >= projects.length) {
       setNextBtn("invisible");
     }
     setFirstIndex(lastIndex);
-    setLastIndex(lastIndex + 6);
+    setLastIndex(lastIndex + 9);
     setPrevBtn("visible");
     scrollToTop();
   };
 
   const previousProject = () => {
-    if (firstIndex === 6) {
+    if (firstIndex === 9) {
       setPrevBtn("invisible");
     }
     setLastIndex(firstIndex);
-    setFirstIndex(firstIndex - 6);
+    setFirstIndex(firstIndex - 9);
     setNextBtn("visible");
     scrollToTop();
   };
@@ -79,7 +79,7 @@ export default function Project(props) {
             </div>
           ))}
       </div>
-      {projects.length > 6 && (
+      {projects.length > 9 && (
         <div className="flex justify-between font-signika mx-4 md:mx-10 mt-10">
           <button
             onClick={previousProject}
