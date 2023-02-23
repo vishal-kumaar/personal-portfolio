@@ -1,4 +1,3 @@
-import resume from "../assets/resume.pdf";
 import profilePic from "../assets/images/profilePic.jpg";
 import project01 from "../assets/projects/project01.webp";
 import project02 from "../assets/projects/project02.webp";
@@ -29,7 +28,7 @@ export const user = {
   description:
     "I am a passionate and hardworking person who loves learning new things. I work well on my own and in groups. My goal is to be able to contribute fully as soon as possible.",
   profilePic: profilePic,
-  resumeLink: resume,
+  resumeLink: "https://drive.google.com/file/d/1xFILBFcQEqLt7oDTQfFx2-y4NLA-s3Et/view",
   gmail: "vishal.kumar08376@gmail.com",
 };
 
