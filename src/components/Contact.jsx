@@ -13,12 +13,12 @@ export default function Contact(props) {
     <div
       className={`${props.opacity} transition duration-500 ease-in-out bg-white py-14 flex flex-col md:flex-row justify-center items-center`}
     >
-      <div className="mr-auto ml-auto md:mr-32 md:ml-0 w-fit">
-        <div className="h-52">
+      <div className="mr-auto ml-auto md:mr-32 md:ml-0 w-fit text-center md:text-left">
+        <div className="h-52 w-fit mb-3 mx-auto md:mx-0">
           <img
             src={user.profilePic}
             alt=""
-            className="rounded-full w-52 mb-3"
+            className="rounded-full w-52"
           />
         </div>
         <h1 className="font-signika text-black text-xl ">{user.name}</h1>
@@ -27,7 +27,7 @@ export default function Contact(props) {
           href={user.resumeLink}
           target="_blank"
           rel="noreferrer"
-          className="w-fit bg-black flex items-center py-2 px-4 rounded shadow-md shadow-black/20 outline-black transition ease-in-out duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-black/30 h-10"
+          className="w-fit mx-auto md:mx-0 bg-black flex items-center py-2 px-4 rounded shadow-md shadow-black/20 outline-black transition ease-in-out duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-black/30 h-10"
         >
           <img src={file} alt="resume" className="w-4 invert" />
           <div className="ml-2 text-sm font-bold font-signika text-white">
