@@ -1,45 +1,59 @@
 import React, { useState } from "react";
 import { projects } from "../utils/portfolio";
-import github from "../assets/images/github.svg";
-import globe from "../assets/images/globe.svg";
 import nextIcon from "../assets/images/next.svg";
+import Project from "./Project";
 
-export default function Project(props) {
+export default function Projects(props) {
   const [firstIndex, setFirstIndex] = useState(0);
-  const [lastIndex, setLastIndex] = useState(9);
+  const [lastIndex, setLastIndex] = useState(6);
   const [nextBtn, setNextBtn] = useState("visible");
   const [prevBtn, setPrevBtn] = useState("invisible");
   const [isLoading, setLoading] = useState(false);
+  const [modal, setModal] = useState(false);
+  const [project, setProject] = useState(null);
 
   const handleLoading = () => {
     setLoading(true);
     setTimeout(() => {
-      setLoading(false)
+      setLoading(false);
     }, 1);
-  }
+  };
 
   const nextProject = () => {
-    if (lastIndex + 9 >= projects.length) {
+    if (lastIndex + 6 >= projects.length) {
       setNextBtn("invisible");
     }
     setFirstIndex(lastIndex);
-    setLastIndex(lastIndex + 9);
+    setLastIndex(lastIndex + 6);
     setPrevBtn("visible");
     handleLoading();
   };
 
   const previousProject = () => {
-    if (firstIndex === 9) {
+    if (firstIndex === 6) {
       setPrevBtn("invisible");
     }
     setLastIndex(firstIndex);
-    setFirstIndex(firstIndex - 9);
+    setFirstIndex(firstIndex - 6);
     setNextBtn("visible");
     handleLoading();
   };
 
+  const handleOnClick = (index) => {
+    setModal(true);
+    setProject(projects[index]);
+    document.body.style.overflow = "hidden";
+    props.setOpacity("opacity-30");
+  };
+
   return (
     <>
+      <Project
+        modal={modal}
+        setModal={setModal}
+        project={project}
+        setOpacity={props.setOpacity}
+      />
       {isLoading ? (
         <div className="py-14 bg-white"></div>
       ) : (
@@ -55,38 +69,20 @@ export default function Project(props) {
               projects.slice(firstIndex, lastIndex).map((project, index) => (
                 <div
                   key={index}
-                  className="w-full sm:w-[44%] lg:w-[28%] mx-4 sm:mx-[3%] lg:mx-[2.66%] mt-10 p-4 rounded-md bg-black/5 mb-4  hover:shadow-2xl hover:scale-105 transition ease-in-out duration-300"
+                  className="w-full sm:w-[44%] lg:w-[28%] mx-4 sm:mx-[3%] lg:mx-[2.66%] mt-10 p-4 rounded-md bg-black/5 mb-4 shadow-2xl cursor-pointer hover:bg-black/20"
+                  onClick={() => handleOnClick(firstIndex + index)}
                 >
                   <img
                     src={project.image}
                     alt={project.name}
                     className="w-full rounded-md"
                   />
-                  <h1 className="font-signika text-xl mt-4">{project.name}</h1>
-                  <div className="flex items-center mt-2">
-                    <a
-                      href={project.code}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex items-center hover:text-blue-600"
-                    >
-                      <img src={github} alt="github" className="w-6" />
-                      <p className="font-poppins">Github</p>
-                    </a>
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex items-center ml-4"
-                    >
-                      <img src={globe} alt="globe" className="w-4" />
-                      <p className="ml-1 font-poppins">Live Link</p>
-                    </a>
-                  </div>
+                  <p className="mt-5 font-firasans text-sm text-black">{project.tech}</p>
+                  <h1 className="font-signika text-xl mt-px">{project.name}</h1>
                 </div>
               ))}
           </div>
-          {projects.length > 9 && (
+          {projects.length > 6 && (
             <div className="flex justify-between font-signika mx-4 md:mx-10 mt-10">
               <button
                 onClick={previousProject}

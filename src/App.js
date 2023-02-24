@@ -39,7 +39,7 @@ function App() {
             </>
           }
         ></Route>
-        <Route exect path="/projects" element={<Projects opacity={opacity} />}></Route>
+        <Route exect path="/projects" element={<Projects opacity={opacity} setOpacity={setOpacity} />}></Route>
         <Route exect path="/blogs" element={<Blogs opacity={opacity} />}></Route>
         <Route exect path="/contact" element={<Contact opacity={opacity} />}></Route>
       </Routes>
