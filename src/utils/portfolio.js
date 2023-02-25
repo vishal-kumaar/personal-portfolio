@@ -99,7 +99,7 @@ export const projects = [
     image: project01,
     code: "https://github.com/vishal-kumaar/Project-1-Street-Style-Landing-Page",
     live: "https://html5-css3-project-01.netlify.app/",
-    desc: "",
+    desc: "This is the static, good looking, and non-responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
     name: "Food Restaurant Home Page",
@@ -107,7 +107,7 @@ export const projects = [
     image: project02,
     code: "https://github.com/vishal-kumaar/Project-2-Food-Restaurant-Home-Page",
     live: "https://html5-css3-project-02.netlify.app/",
-    desc: "",
+    desc: "This is the static, good looking, and non-responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
     name: "Digital Marketing Page",
@@ -115,7 +115,7 @@ export const projects = [
     image: project03,
     code: "https://github.com/vishal-kumaar/Project-4-Digital-Marketing-Page",
     live: "https://html5-css3-project-04.netlify.app/",
-    desc: "",
+    desc: "This is the static, good looking, and non-responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
     name: "Crypto Landing Page",
@@ -123,7 +123,7 @@ export const projects = [
     image: project04,
     code: "https://github.com/vishal-kumaar/Project-5-Crypto-Landing-Page",
     live: "https://html5-css3-project-05.netlify.app/",
-    desc: "",
+    desc: "This is the static, good looking, and non-responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
     name: "Plant Home Page",
@@ -131,7 +131,7 @@ export const projects = [
     image: project05,
     code: "https://github.com/vishal-kumaar/Project-6-Plant-Home-Page",
     live: "https://html5-css3-project-06.netlify.app/",
-    desc: "",
+    desc: "This is the static, good looking, and non-responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
     name: "Product Home Page",
@@ -139,7 +139,7 @@ export const projects = [
     image: project06,
     code: "https://github.com/vishal-kumaar/Project-7-Product-Home-Page",
     live: "https://html5-css3-project-07.netlify.app/",
-    desc: "",
+    desc: "This is the static, good looking, and responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
     name: "Web Design Landing Page",
@@ -147,7 +147,7 @@ export const projects = [
     image: project07,
     code: "https://github.com/vishal-kumaar/Project-8-Web-Design-Landing-Page",
     live: "https://html5-css3-project-08.netlify.app/",
-    desc: "",
+    desc: "This is the static, good looking, and responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
     name: "Developer Landing Page",
@@ -155,7 +155,7 @@ export const projects = [
     image: project08,
     code: "https://github.com/vishal-kumaar/Project-9-Developer-Landing-Page",
     live: "https://html5-css3-project-09.netlify.app/",
-    desc: "",
+    desc: "This is the static, good looking, and responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
     name: "Hosting Landing Page",
@@ -163,7 +163,7 @@ export const projects = [
     image: project09,
     code: "https://github.com/vishal-kumaar/Project-11-Hosting-Landing-Page",
     live: "https://html5-css3-project-11.netlify.app/",
-    desc: "",
+    desc: "This is the static, good looking, and responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
     name: "Interior Design Landing Page",
@@ -171,7 +171,7 @@ export const projects = [
     image: project10,
     code: "https://github.com/vishal-kumaar/Project-10-Interior-Design-Landing-Page",
     live: "https://html5-css3-project-10.netlify.app/",
-    desc: "",
+    desc: "This is the static, good looking, and responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
     name: "Business Landing Page",
@@ -179,7 +179,7 @@ export const projects = [
     image: project11,
     code: "https://github.com/vishal-kumaar/Project-12-Business-Landing-Page",
     live: "https://html5-css3-project-12.netlify.app/",
-    desc: "",
+    desc: "This is the static, good looking, and responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
     name: "SAAS Landing Page",
@@ -187,7 +187,7 @@ export const projects = [
     image: project12,
     code: "https://github.com/vishal-kumaar/Project-13-SAAS-Landing-Page",
     live: "https://html5-css3-project-13.netlify.app/",
-    desc: "",
+    desc: "This is the static, good looking, and responsive website. The tech stack that I use tp create this website is HTML and CSS.",
   },
   {
     name: "Rock Paper Scissor",
@@ -195,7 +195,7 @@ export const projects = [
     image: project13,
     code: "https://github.com/vishal-kumaar/Rock-Paper-Scissors",
     live: "https://rock-paper-and-scissor.netlify.app/",
-    desc: "",
+    desc: "This is a very popular game and we must have played it at least once in our life. This website is also responsive also means we can use this in any size of device. The tech stack I use to create this website is HTML, CSS, and JavaScript.",
   },
   {
     name: "Food delivery static site",
@@ -203,7 +203,7 @@ export const projects = [
     image: project14,
     code: "https://github.com/vishal-kumaar/food-delivery-website-template",
     live: "https://vishal-kumaar.github.io/food-delivery-website-template/",
-    desc: "",
+    desc: "This is the static, good looking, and responsive food delivery dummy website template. The tech stack that I use tp create this website is HTML and CSS.",
   },
   {
     name: "Shade Up",
@@ -211,7 +211,7 @@ export const projects = [
     image: project15,
     code: "https://github.com/vishal-kumaar/Shade-Up",
     live: "https://shade-up.netlify.app/",
-    desc: "",
+    desc: "This is the static, good looking, and responsite website. This website have functionality such as color convertor, see color by RGB range, see color by HEX code, generate random color, etc. The tech stack that I use to create this website is HTML, CSS, and JavaScript.",
   },
   {
     name: "Product Design Landing Page",
@@ -219,7 +219,7 @@ export const projects = [
     image: project16,
     code: "https://github.com/vishal-kumaar/Project-15-Project-Design-Landing-Page",
     live: "https://html5-css3-project-15.netlify.app/",
-    desc: "",
+    desc: "This is a static, good looking and responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
     name: "Rode Clone",
@@ -227,7 +227,7 @@ export const projects = [
     image: project17,
     code: "https://github.com/vishal-kumaar/Rode-Clone-TailwindCSS",
     live: "https://tailwindcss-rode-clone.netlify.app/",
-    desc: "",
+    desc: "This is the homepage clone of the Rode's website. This is the static, good looking, and responsite website. The tech stack that I use to create this website is HTML and Tailwind CSS",
   },
   {
     name: "Paytm Clone",
@@ -235,7 +235,7 @@ export const projects = [
     image: project18,
     code: "https://github.com/vishal-kumaar/Paytm-Clone-TailwindCSS",
     live: "https://tailwindcss-paytm-clone.netlify.app/",
-    desc: "",
+    desc: "This is the homepage clone of the Paytn's website. This is the static, good looking, and responsite website. The tech stack that I use to create this website is HTML and Tailwind CSS",
   },
   {
     name: "Shopify Clone",
@@ -243,15 +243,15 @@ export const projects = [
     image: project19,
     code: "https://github.com/vishal-kumaar/Shopify-Clone-TailwindCSS",
     live: "https://tailwindcss-shopify-clone.netlify.app/",
-    desc: "",
+    desc: "This is the homepage clone of the Shopify's website. This is the static, good looking, and responsite website. The tech stack that I use to create this website is HTML and Tailwind CSS",
   },
   {
-    name: "React Calculator",
+    name: "Calculator",
     tech: "ReactJs and TaiwindCSS",
     image: project20,
     code: "https://github.com/vishal-kumaar/react-calculator",
     live: "https://arithmatic-calculator.netlify.app/",
-    desc: "",
+    desc: "This is the static, good looking, and responsive calculator website. This calculator is only for simple mathematical operation such as Addition, Subtraction, Multiplication, and Division. The tech stack that I use to create this calculator is ReactJs and Taiwlind CSS",
   },
   {
     name: "Full Stack Note Application",
@@ -259,7 +259,7 @@ export const projects = [
     image: project21,
     code: "https://github.com/vishal-kumaar/MERN-notes-application",
     live: "https://magicnotes.up.railway.app/",
-    desc: "",
+    desc: "This is the dynamic, good looking, and responsive note making web application. This website have many functionalities such as dark mode, user login, user signup, forgotten password, update/reset password, create note, edit note, check note, search note, delete note, etc. The tech stack that I use to create this note making web application is MongoDB, ExpressJs, ReactJs, NodeJs, and Tailwind CSS.",
   },
 ].reverse();
 
