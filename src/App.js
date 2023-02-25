@@ -10,23 +10,35 @@ import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
 
 function App() {
-  const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(false);
   const [opacity, setOpacity] = useState("opacity-100");
   document.body.classList = "bg-black";
 
   const toggleSidebar = () => {
     if (sidebar === true) {
       setSidebar(false);
-      setOpacity("opacity-30");
+      setOpacity("opacity-100");
+      document.body.style.overflow = "auto";
     } else {
       setSidebar(true);
-      setOpacity("opacity-100")
+      setOpacity("opacity-30");
+      document.body.style.overflow = "hidden";
     }
   };
 
+  window.addEventListener("click", (event) => {
+    if (event.target.id === "sidebar") {
+      toggleSidebar();
+    }
+  });
+
   return (
     <Router>
-      <Navbar toggleSidebar={toggleSidebar} sidebar={sidebar} opacity={opacity} />
+      <Navbar
+        toggleSidebar={toggleSidebar}
+        sidebar={sidebar}
+        opacity={opacity}
+      />
       <Sidebar toggleSidebar={toggleSidebar} sidebar={sidebar} />
       <Routes>
         <Route
@@ -39,9 +51,21 @@ function App() {
             </>
           }
         ></Route>
-        <Route exect path="/projects" element={<Projects opacity={opacity} setOpacity={setOpacity} />}></Route>
-        <Route exect path="/blogs" element={<Blogs opacity={opacity} />}></Route>
-        <Route exect path="/contact" element={<Contact opacity={opacity} />}></Route>
+        <Route
+          exect
+          path="/projects"
+          element={<Projects opacity={opacity} setOpacity={setOpacity} />}
+        ></Route>
+        <Route
+          exect
+          path="/blogs"
+          element={<Blogs opacity={opacity} />}
+        ></Route>
+        <Route
+          exect
+          path="/contact"
+          element={<Contact opacity={opacity} />}
+        ></Route>
       </Routes>
       <Footer opacity={opacity} />
     </Router>
