@@ -19,7 +19,7 @@ export default function Sidebar(props) {
       id="sidebar"
       className={`bg-transparent  ${
         props.sidebar ? "translate-x-0" : "-translate-x-full"
-      } w-screen h-screen fixed top-0 left-0 z-50 transition duration-700 ease-in-out`}
+      } w-full h-full fixed top-0 left-0 z-50 transition duration-700 ease-in-out`}
     >
       <aside
         className={`flex flex-col justify-between fixed overflow-y-auto w-fit h-screen pt-8 px-6 bg-white transform ease-in-out duration-500`}

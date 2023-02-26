@@ -9,7 +9,6 @@ export default function Projects(props) {
   const [nextBtn, setNextBtn] = useState("visible");
   const [prevBtn, setPrevBtn] = useState("invisible");
   const [isLoading, setLoading] = useState(false);
-  const [modal, setModal] = useState(false);
   const [project, setProject] = useState(null);
 
   const handleLoading = () => {
@@ -39,20 +38,17 @@ export default function Projects(props) {
     handleLoading();
   };
 
-  const handleOnClick = (index) => {
-    setModal(true);
+  const openModal = (index) => {
+    props.toggleModal();
     setProject(projects[index]);
-    document.body.style.overflow = "hidden";
-    props.setOpacity("opacity-30");
   };
 
   return (
     <>
       <Project
-        modal={modal}
-        setModal={setModal}
+        modal={props.modal}
+        toggleModal={props.toggleModal}
         project={project}
-        setOpacity={props.setOpacity}
       />
       {isLoading ? (
         <div className="py-14 bg-white"></div>
@@ -70,14 +66,16 @@ export default function Projects(props) {
                 <div
                   key={index}
                   className="w-full sm:w-[44%] lg:w-[28%] mx-4 sm:mx-[3%] lg:mx-[2.66%] mt-10 p-4 rounded-md bg-black/5 mb-4 shadow-2xl cursor-pointer hover:bg-black/20"
-                  onClick={() => handleOnClick(firstIndex + index)}
+                  onClick={() => openModal(firstIndex + index)}
                 >
                   <img
                     src={project.image}
                     alt={project.name}
                     className="w-full rounded-md"
                   />
-                  <p className="mt-5 font-firasans text-sm text-black">{project.tech}</p>
+                  <p className="mt-5 font-firasans text-sm text-black">
+                    {project.tech}
+                  </p>
                   <h1 className="font-signika text-xl mt-px">{project.name}</h1>
                 </div>
               ))}

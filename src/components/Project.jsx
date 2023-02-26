@@ -4,16 +4,8 @@ import globe from "../assets/images/globe.svg";
 
 export default function Project(props) {
   const closeModal = () => {
-    props.setModal(false);
-    props.setOpacity("opacity-100");
-    document.body.style.overflow = "auto";
+    props.toggleModal();
   };
-
-  window.addEventListener("click", (event) => {
-    if (event.target.id === "project") {
-      closeModal();
-    }
-  });
 
   return (
     <div

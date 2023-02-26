@@ -12,6 +12,7 @@ import Contact from "./components/Contact";
 function App() {
   const [sidebar, setSidebar] = useState(false);
   const [opacity, setOpacity] = useState("opacity-100");
+  const [modal, setModal] = useState(false);
   document.body.classList = "bg-black";
 
   const toggleSidebar = () => {
@@ -26,11 +27,25 @@ function App() {
     }
   };
 
-  window.addEventListener("click", (event) => {
+  const toggleModal = () => {
+    if (modal === true) {
+      setModal(false);
+      document.body.style.overflow = "auto";
+      setOpacity("opacity-100");
+    } else {
+      setModal(true);
+      document.body.style.overflow = "hidden";
+      setOpacity("opacity-30");
+    }
+  };
+
+  window.onclick = (event) => {
     if (event.target.id === "sidebar") {
       toggleSidebar();
+    } else if (event.target.id === "project") {
+      toggleModal();
     }
-  });
+  };
 
   return (
     <Router>
@@ -54,7 +69,13 @@ function App() {
         <Route
           exect
           path="/projects"
-          element={<Projects opacity={opacity} setOpacity={setOpacity} />}
+          element={
+            <Projects
+              opacity={opacity}
+              modal={modal}
+              toggleModal={toggleModal}
+            />
+          }
         ></Route>
         <Route
           exect
