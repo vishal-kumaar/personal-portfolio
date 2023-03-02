@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import avatar from "../assets/images/avatar.svg";
 import close from "../assets/images/close.svg";
 import home from "../assets/images/home.svg";
@@ -39,34 +39,34 @@ export default function Sidebar(props) {
           </h1>
           <hr className="border mt-5" />
           <div className="text-gray-600 font-bold mt-5 flex flex-col">
-            <NavLink
+            <Link
               to="/"
               className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
             >
               <img src={home} alt="" className="w-6 h-6 mr-2" />
-              <div className="">Home</div>
-            </NavLink>
-            <NavLink
+              <p>Home</p>
+            </Link>
+            <Link
               to="/projects"
               className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
             >
               <img src={project} alt="" className="w-6 h-6 mr-2" />
-              <div className="">Projects</div>
-            </NavLink>
-            <NavLink
+              <p>Projects</p>
+            </Link>
+            <Link
               to="/blogs"
               className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
             >
               <img src={blog} alt="" className="w-6 h-6 mr-2" />
-              <div className="">Blogs</div>
-            </NavLink>
-            <NavLink
+              <p>Blogs</p>
+            </Link>
+            <Link
               to="/contact"
               className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
             >
               <img src={contact} alt="" className="w-6 h-6 mr-2" />
-              <div className="">Contact</div>
-            </NavLink>
+              <p>Contact</p>
+            </Link>
           </div>
         </div>
         <div className="mb-20">
