@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Headroom from "react-headroom";
 import { user } from "../utils/portfolio";
 import hamburger from "../assets/images/hamburger.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar(props) {
   let [navBg, setNavBg] = useState(
@@ -18,34 +18,46 @@ export default function Navbar(props) {
       <nav
         className={`${props.opacity} text-white flex justify-between items-center px-4 md:px-10 pt-7 pb-3 ${navBg} transform ease-in-out duration-500`}
       >
-        <NavLink to="/" className="font-cursive text-3xl">
+        <Link to="/" className="font-cursive text-3xl">
           {user.name}
-        </NavLink>
+        </Link>
         <div className="hidden md:block">
-          <NavLink
+          <div className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md">
+            <NavLink
+            
             to="/"
-            className="ml-6 p-2 rounded font-roboto outline-white hover:bg-white hover:text-black hover:shadow-md"
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/projects"
-            className="ml-6 p-2 rounded font-roboto outline-white hover:bg-white hover:text-black hover:shadow-md"
-          >
-            Projects
-          </NavLink>
-          <NavLink
-            to="/blogs"
-            className="ml-6 p-2 rounded font-roboto outline-white hover:bg-white hover:text-black hover:shadow-md"
-          >
-            Blogs
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className="ml-6 p-2 rounded font-roboto outline-white hover:bg-white hover:text-black hover:shadow-md"
-          >
-            Contact
-          </NavLink>
+            activeclassname="active"
+            >
+              Home
+            </NavLink>
+          </div>
+          <div className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md">
+            <NavLink
+              to="/projects"
+              activeclassname="active"
+              className=""
+            >
+              Projects
+            </NavLink>
+          </div>
+          <div className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md">
+            <NavLink
+              to="/blogs"
+              activeclassname="active"
+              className=""
+            >
+              Blogs
+            </NavLink>
+          </div>
+          <div className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md">
+            <NavLink
+              to="/contact"
+              activeclassname="active"
+              className=""
+            >
+              Contact
+            </NavLink>
+          </div>
         </div>
         <div className="block md:hidden">
           <img
