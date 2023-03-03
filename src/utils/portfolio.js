@@ -20,6 +20,7 @@ import project18 from "../assets/projects/project18.webp";
 import project19 from "../assets/projects/project19.webp";
 import project20 from "../assets/projects/project20.webp";
 import project21 from "../assets/projects/project21.webp";
+import project22 from "../assets/projects/project22.webp";
 
 export const user = {
   name: "Vishal Kumar",
@@ -251,15 +252,23 @@ export const projects = [
     image: project20,
     code: "https://github.com/vishal-kumaar/react-calculator",
     live: "https://arithmatic-calculator.netlify.app/",
-    desc: "This is the static, good looking, and responsive calculator website. This calculator is only for simple mathematical operation such as Addition, Subtraction, Multiplication, and Division. The tech stack that I use to create this calculator is ReactJs and Taiwlind CSS",
+    desc: "This is the static, good looking, and responsive calculator website. This calculator is only for simple mathematical operation such as Addition, Subtraction, Multiplication, and Division. This website also have dark mode theme. The tech stack that I use to create this calculator is ReactJs and Taiwlind CSS",
   },
   {
-    name: "Full Stack Note Application",
+    name: "Magic Notes",
     tech: "MERN and TailwindCSS",
     image: project21,
     code: "https://github.com/vishal-kumaar/MERN-notes-application",
     live: "https://magicnotes.up.railway.app/",
     desc: "This is the dynamic, good looking, and responsive note making web application. This website have many functionalities such as dark mode, user login, user signup, forgotten password, update/reset password, create note, edit note, check note, search note, delete note, etc. The tech stack that I use to create this note making web application is MongoDB, ExpressJs, ReactJs, NodeJs, and Tailwind CSS.",
+  },
+  {
+    name: "Personal Portfolio",
+    tech: "ReactJs and TailwindCSS",
+    image: project22,
+    code: "https://github.com/vishal-kumaar/personal-portfolio",
+    live: "https://vishal-kumar.netlify.app/",
+    desc: "This is static, good looking, and responstive portfolio site. The tech stack that I use to create this portfolio site is ReactJs and Tailwind CSS",
   },
 ].reverse();
 
