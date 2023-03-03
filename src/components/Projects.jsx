@@ -71,7 +71,7 @@ export default function Projects(props) {
                   <img
                     src={project.image}
                     alt={project.name}
-                    className="w-full rounded-md"
+                    className="w-full rounded-md border-2"
                   />
                   <p className="mt-5 font-firasans text-sm text-black">
                     {project.tech}
