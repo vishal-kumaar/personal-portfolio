@@ -21,7 +21,7 @@ export default function Navbar(props) {
         <Link to="/" className="font-cursive text-3xl">
           {user.name}
         </Link>
-        <div className="hidden md:block">
+        <Link to="/" className="hidden md:block">
           <div className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md">
             <NavLink
             
@@ -31,16 +31,15 @@ export default function Navbar(props) {
               Home
             </NavLink>
           </div>
-          <div className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md">
+          <Link to="/projects" className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md">
             <NavLink
               to="/projects"
               activeclassname="active"
-              className=""
             >
               Projects
             </NavLink>
-          </div>
-          <div className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md">
+          </Link>
+          <Link to="/blogs" className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md">
             <NavLink
               to="/blogs"
               activeclassname="active"
@@ -48,8 +47,8 @@ export default function Navbar(props) {
             >
               Blogs
             </NavLink>
-          </div>
-          <div className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md">
+          </Link>
+          <Link to="/contact" className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md">
             <NavLink
               to="/contact"
               activeclassname="active"
@@ -57,8 +56,8 @@ export default function Navbar(props) {
             >
               Contact
             </NavLink>
-          </div>
-        </div>
+          </Link>
+        </Link>
         <div className="block md:hidden">
           <img
             src={hamburger}
