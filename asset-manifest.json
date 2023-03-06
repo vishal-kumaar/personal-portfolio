@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.229396a7.css",
-    "main.js": "/static/js/main.3fa532a3.js",
+    "main.css": "/static/css/main.3198f752.css",
+    "main.js": "/static/js/main.60016601.js",
     "static/media/project14.webp": "/static/media/project14.d0e1c3903668bcfefaeb.webp",
     "static/media/profilePic.jpg": "/static/media/profilePic.5c9927247c059bd8d4a6.jpg",
     "static/media/project04.webp": "/static/media/project04.d8415222da296abbb13f.webp",
@@ -41,13 +41,14 @@
     "static/media/facebook.svg": "/static/media/facebook.131f92fe187f2eb66b3b5e6bf75bc1e4.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.dd4f4e11359069f388a665cfe2258d58.svg",
     "static/media/file.svg": "/static/media/file.683eea5e5203cdaf192260dc947f137c.svg",
+    "static/media/clock.svg": "/static/media/clock.ebb45e2c27987026bbd32cd5bc9f7fc1.svg",
     "static/media/seperator.svg": "/static/media/seperator.7875031f7ea2cd3b5beddd4373ddd439.svg",
     "static/media/close.svg": "/static/media/close.26d8d18d1ecb4019108c06e659c43d9b.svg",
-    "main.229396a7.css.map": "/static/css/main.229396a7.css.map",
-    "main.3fa532a3.js.map": "/static/js/main.3fa532a3.js.map"
+    "main.3198f752.css.map": "/static/css/main.3198f752.css.map",
+    "main.60016601.js.map": "/static/js/main.60016601.js.map"
   },
   "entrypoints": [
-    "static/css/main.229396a7.css",
-    "static/js/main.3fa532a3.js"
+    "static/css/main.3198f752.css",
+    "static/js/main.60016601.js"
   ]
 }
