@@ -29,7 +29,8 @@ export const user = {
   description:
     "I am a passionate and hardworking person who loves learning new things. I work well on my own and in groups. My goal is to be able to contribute fully as soon as possible.",
   profilePic: profilePic,
-  resumeLink: "https://drive.google.com/file/d/1xFILBFcQEqLt7oDTQfFx2-y4NLA-s3Et/view",
+  resumeLink:
+    "https://drive.google.com/file/d/1xFILBFcQEqLt7oDTQfFx2-y4NLA-s3Et/view",
   gmail: "vishal.kumar08376@gmail.com",
 };
 
@@ -275,7 +276,7 @@ export const projects = [
 export const blogs = [
   {
     title: "CSS Position",
-    subtitle: "The CSS Position Property: Everything You Need to Know",
+    brief: "The CSS Position Property: Everything You Need to Know · Hello! To all my readers, I hope that you all guys are fine. In this article, I will try to...",
     readTime: "4 min read",
     date: "Jul 19, 2022",
     link: "https://vishaalkumar.hashnode.dev/css-position",
@@ -284,7 +285,7 @@ export const blogs = [
   },
   {
     title: "CSS Selectors for Beginners",
-    subtitle: "Learn CSS Selectors in a simple way with examples",
+    brief: "Learn CSS Selectors in a simple way with examples. · What is CSS Selectors? CSS selectors are used to defining the elements you want to style with CSS....",
     readTime: "4 min read",
     date: "Aug 28, 2022",
     link: "https://vishaalkumar.hashnode.dev/css-selectors-for-beginners",
@@ -293,8 +294,7 @@ export const blogs = [
   },
   {
     title: "CSS Box Model",
-    subtitle:
-      "The CSS Box Model: (Borders, Margins, Padding and Content itself)",
+    brief: "The CSS Box Model: (Borders, Margins, Padding and Content itself) · Hello to all my readers, I hope that you all guys are fine. In this article, I will...",
     readTime: "3 min read",
     date: "Dec 30, 2022",
     link: "https://vishaalkumar.hashnode.dev/css-box-model",
@@ -303,7 +303,7 @@ export const blogs = [
   },
   {
     title: "CSS Flexbox",
-    subtitle: "Understand CSS Flexbox in a simple way with examples",
+    brief: "Understand CSS Flexbox in a simple way with examples · What is Flexbox? Flexbox is a tool that is used to design layouts in CSS very easily and quickly...",
     readTime: "6 min read",
     date: "Jan 12, 2023",
     link: "https://vishaalkumar.hashnode.dev/css-flexbox",
