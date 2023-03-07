@@ -42,7 +42,7 @@ export default function Project(props) {
                 href={props.project.code}
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center hover:text-blue-600"
+                className="flex items-center text-black hover:text-blue-600"
               >
                 <img src={github} alt="github" className="w-6" />
                 <p className="font-poppins">Github</p>
@@ -51,7 +51,7 @@ export default function Project(props) {
                 href={props.project.live}
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center ml-4"
+                className="flex items-center ml-4 text-black hover:text-blue-600"
               >
                 <img src={globe} alt="globe" className="w-4" />
                 <p className="ml-1 font-poppins">Live Link</p>

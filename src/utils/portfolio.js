@@ -259,7 +259,7 @@ export const projects = [
     name: "Magic Notes",
     tech: "MERN and TailwindCSS",
     image: project21,
-    code: "https://github.com/vishal-kumaar/MERN-notes-application",
+    code: "https://github.com/vishal-kumaar/magic-notes",
     live: "https://magicnotes.up.railway.app/",
     desc: "This is the dynamic, good looking, and responsive note making web application. This website have many functionalities such as dark mode, user login, user signup, forgotten password, update/reset password, create note, edit note, check note, search note, delete note, etc. The tech stack that I use to create this note making web application is MongoDB, ExpressJs, ReactJs, NodeJs, and Tailwind CSS.",
   },
