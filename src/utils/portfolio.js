@@ -310,4 +310,13 @@ export const blogs = [
     coverImg:
       "https://cdn.hashnode.com/res/hashnode/image/upload/v1673078528076/cdf0545b-1d01-4ed1-8dd4-8f40ed7ca737.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
   },
+  {
+    title: "JavaScript Hoisting",
+    brief: "JavaScript Hoisting: How It Works and Things to Keep in Mind. · JavaScript is a programming language that is widely used on the web, both on the front...",
+    readTime: "5 min read",
+    date: "Mar 7, 2023",
+    link: "https://vishaalkumar.hashnode.dev/javascript-hoisting",
+    coverImg:
+      "https://cdn.hashnode.com/res/hashnode/image/upload/v1678200333762/3454c578-d7c4-4aee-a748-66e39d572e39.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+  },
 ].reverse();
