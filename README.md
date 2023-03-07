@@ -1,8 +1,6 @@
-<a href="https://vishal-kumar.netlify.app" style="color:lightgreen">🔗 Live Link</a>
+<a href="https://vishal-kumar.netlify.app" target="_blank">🔗 Live Link</a>
 
-<p align="center" style="font-size:50px">
-    Personal Portfolio
-</p>
+<h1 align="center">Personal Portfolio</h1>
 
 <p align="center">
     <b>This is static, good looking, and responstive portfolio site.</b> 
@@ -26,7 +24,7 @@ The tech stack that I use to create this portfolio site are:
 
 To clone this project in your local system, write the below command in your terminal
 
-```bash
+```
 git clone https://github.com/vishal-kumaar/personal-portfolio.git
 ```
 
@@ -34,13 +32,13 @@ git clone https://github.com/vishal-kumaar/personal-portfolio.git
 
 In the project directory, you can run: <br /> <br />
 
-```bash
+```
 npm install
 ```
 
 Above command to install all the packages used in this project. <br /> <br />
 
-```bash
+```
 npm start
 ```
 
@@ -52,13 +50,13 @@ then,
 - You may also see any lint errors in the console.
   <br /> <br />
 
-```bash
+```
 npm test
 ```
 
 Above command launches the test runner in the interactive watch mode. <br /> <br />
 
-```bash
+```
 npm run build
 ```
 
@@ -70,7 +68,7 @@ then,
 - Your app is ready to be deployed!
   <br /> <br />
 
-```bash
+```
 npm run eject
 ```
 
