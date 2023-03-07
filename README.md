@@ -1,7 +1,7 @@
 <a href="https://vishal-kumar.netlify.app" style="color:lightgreen">🔗 Live Link</a>
 
-<p align="center">
-    <font size="10">Personal Portfolio</font>
+<p align="center" style="font-size:50px">
+    Personal Portfolio
 </p>
 
 <p align="center">
