@@ -319,4 +319,13 @@ export const blogs = [
     coverImg:
       "https://cdn.hashnode.com/res/hashnode/image/upload/v1678200333762/3454c578-d7c4-4aee-a748-66e39d572e39.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
   },
+  {
+    title: "JavaScript Execution Context",
+    brief: "Understand how JavaScript works behind the scene. · In the world of programming, the execution context is one of the fundamental concepts that is used in...",
+    readTime: "5 min read",
+    date: "Mar 12, 2023",
+    link: "https://vishaalkumar.hashnode.dev/javascript-execution-context",
+    coverImg:
+      "https://cdn.hashnode.com/res/hashnode/image/upload/v1678629677028/c3d88535-da97-4165-963f-256c3f3e4789.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+  },
 ].reverse();
