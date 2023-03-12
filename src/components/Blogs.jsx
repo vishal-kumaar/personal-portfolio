@@ -47,12 +47,12 @@ export default function Blog(props) {
         >
           <div className="mx-auto w-fit">
             <h1 className="mb-4 text-3xl font-signika text-black">Blogs</h1>
-            <hr className="border-black/40 mb-12 md:mb-0" />
+            <hr className="border-black/40" />
             {blogs &&
               blogs.slice(firstIndex, lastIndex).map((blog, index) => (
                 <div
                   key={index}
-                  className="flex mt-0 mb-16 md:mt-0 md:mb-16 items-center flex-col-reverse sm:flex-row"
+                  className="flex mt-12 items-center flex-col-reverse sm:flex-row"
                 >
                   <div className="mr-10">
                     <h1 className="font-signika text-2xl text-black mt-2">
