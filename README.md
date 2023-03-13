@@ -1,4 +1,4 @@
-<a href="https://vishal-kumar.netlify.app" target="_blank">🔗 Live Link</a>
+<a href="https://vishal-kumar.netlify.app" target="_blank">🔗 Portfolio Live Link</a>
 
 <h1 align="center">Personal Portfolio</h1>
 
