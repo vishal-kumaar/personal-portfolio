@@ -285,7 +285,7 @@ export const blogs = [
   },
   {
     title: "CSS Selectors for Beginners",
-    brief: "Learn CSS Selectors in a simple way with examples. · What is CSS Selectors? CSS selectors are used to defining the elements you want to style with CSS....",
+    brief: "Learn CSS Selectors in a simple way with examples · What is CSS Selectors? CSS selectors are used to defining the elements you want to style with CSS....",
     readTime: "4 min read",
     date: "Aug 28, 2022",
     link: "https://vishaalkumar.hashnode.dev/css-selectors-for-beginners",
@@ -312,7 +312,7 @@ export const blogs = [
   },
   {
     title: "JavaScript Hoisting",
-    brief: "JavaScript Hoisting: How It Works and Things to Keep in Mind. · JavaScript is a programming language that is widely used on the web, both on the front...",
+    brief: "JavaScript Hoisting: How It Works and Things to Keep in Mind · JavaScript is a programming language that is widely used on the web, both on the front...",
     readTime: "5 min read",
     date: "Mar 7, 2023",
     link: "https://vishaalkumar.hashnode.dev/javascript-hoisting",
@@ -321,11 +321,20 @@ export const blogs = [
   },
   {
     title: "JavaScript Execution Context",
-    brief: "Understand how JavaScript works behind the scene. · In the world of programming, the execution context is one of the fundamental concepts that is used in...",
+    brief: "Understand how JavaScript works behind the scene · In the world of programming, the execution context is one of the fundamental concepts that is used in...",
     readTime: "5 min read",
     date: "Mar 12, 2023",
     link: "https://vishaalkumar.hashnode.dev/javascript-execution-context",
     coverImg:
       "https://cdn.hashnode.com/res/hashnode/image/upload/v1678629677028/c3d88535-da97-4165-963f-256c3f3e4789.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+  },
+  {
+    title: "JavaScript Call Stack",
+    brief: "Understand Call Stack in simple way · JavaScript is a popular programming language that is widely used to create interactive and dynamic web pages. One...",
+    readTime: "3 min read",
+    date: "Mar 19, 2023",
+    link: "https://vishaalkumar.hashnode.dev/javascript-call-stack",
+    coverImg:
+      "https://cdn.hashnode.com/res/hashnode/image/upload/v1678978703744/2cf81007-b4bb-4e65-9ba1-f9a8048af5f7.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
   },
 ].reverse();
