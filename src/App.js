@@ -15,6 +15,13 @@ function App() {
   const [modal, setModal] = useState(false);
   document.body.classList = "bg-black";
 
+  const scroll = () => {
+    window.scroll({
+      top: 0,
+      behavior: "auto",
+    });
+  };
+
   const toggleSidebar = () => {
     if (sidebar === true) {
       setSidebar(false);
@@ -53,8 +60,13 @@ function App() {
         toggleSidebar={toggleSidebar}
         sidebar={sidebar}
         opacity={opacity}
+        scroll={scroll}
       />
-      <Sidebar toggleSidebar={toggleSidebar} sidebar={sidebar} />
+      <Sidebar
+        toggleSidebar={toggleSidebar}
+        sidebar={sidebar}
+        scroll={scroll}
+      />
       <Routes>
         <Route
           exect
