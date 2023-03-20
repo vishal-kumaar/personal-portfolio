@@ -72,7 +72,7 @@ export default function Blog(props) {
                     <h3 className="font-firasans text-base text-slate-600 max-w-xl">
                       {blog.brief} {" "}
                       <span className="text-blue-500">
-                        <a href={blog.link} target="_blank" rel="noreferrer">
+                        <a href={blog.link}>
                           read more
                         </a>
                       </span>
