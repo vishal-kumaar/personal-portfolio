@@ -15,14 +15,17 @@ export default function Contact(props) {
     >
       <div className="mr-auto ml-auto md:mr-32 md:ml-0 w-fit text-center md:text-left">
         <div className="h-52 w-fit mb-3 mx-auto md:mx-0">
-          <img
-            src={user.profilePic}
-            alt=""
-            className="rounded-full w-52"
-          />
+          <img src={user.profilePic} alt="" className="rounded-full w-52" />
         </div>
         <h1 className="font-signika text-black text-xl ">{user.name}</h1>
-        <p className="font-poppins text-md text-black mb-4">{user.gmail}</p>
+        <p className="mb-2">
+          <a
+            href={`mailto:${user.gmail}`}
+            className="font-poppins text-md text-black"
+          >
+            {user.gmail}
+          </a>
+        </p>
         <a
           href={user.resumeLink}
           target="_blank"
