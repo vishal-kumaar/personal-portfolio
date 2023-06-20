@@ -100,7 +100,7 @@ export const projects = [
     tech: "HTML and CSS",
     image: project01,
     code: "https://github.com/vishal-kumaar/Project-1-Street-Style-Landing-Page",
-    live: "https://html5-css3-project-01.netlify.app/",
+    live: "https://street-style-landing-site.vercel.app/",
     desc: "This is the static, good looking, and non-responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
@@ -108,7 +108,7 @@ export const projects = [
     tech: "HTML and CSS",
     image: project02,
     code: "https://github.com/vishal-kumaar/Project-2-Food-Restaurant-Home-Page",
-    live: "https://html5-css3-project-02.netlify.app/",
+    live: "https://food-restaurant-home-site.vercel.app/",
     desc: "This is the static, good looking, and non-responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
@@ -116,7 +116,7 @@ export const projects = [
     tech: "HTML and CSS",
     image: project03,
     code: "https://github.com/vishal-kumaar/Project-4-Digital-Marketing-Page",
-    live: "https://html5-css3-project-04.netlify.app/",
+    live: "https://digital-marketing-site.vercel.app/",
     desc: "This is the static, good looking, and non-responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
@@ -124,7 +124,7 @@ export const projects = [
     tech: "HTML and CSS",
     image: project04,
     code: "https://github.com/vishal-kumaar/Project-5-Crypto-Landing-Page",
-    live: "https://html5-css3-project-05.netlify.app/",
+    live: "https://crypto-landing-site.vercel.app/",
     desc: "This is the static, good looking, and non-responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
@@ -132,7 +132,7 @@ export const projects = [
     tech: "HTML and CSS",
     image: project05,
     code: "https://github.com/vishal-kumaar/Project-6-Plant-Home-Page",
-    live: "https://html5-css3-project-06.netlify.app/",
+    live: "https://plant-home-site.vercel.app/",
     desc: "This is the static, good looking, and non-responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
@@ -140,7 +140,7 @@ export const projects = [
     tech: "HTML and CSS",
     image: project06,
     code: "https://github.com/vishal-kumaar/Project-7-Product-Home-Page",
-    live: "https://html5-css3-project-07.netlify.app/",
+    live: "https://product-home-site.vercel.app/",
     desc: "This is the static, good looking, and responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
@@ -148,7 +148,7 @@ export const projects = [
     tech: "HTML and CSS",
     image: project07,
     code: "https://github.com/vishal-kumaar/Project-8-Web-Design-Landing-Page",
-    live: "https://html5-css3-project-08.netlify.app/",
+    live: "https://web-design-landing-site.vercel.app/",
     desc: "This is the static, good looking, and responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
@@ -156,7 +156,7 @@ export const projects = [
     tech: "HTML and CSS",
     image: project08,
     code: "https://github.com/vishal-kumaar/Project-9-Developer-Landing-Page",
-    live: "https://html5-css3-project-09.netlify.app/",
+    live: "https://developer-landing-site.vercel.app/",
     desc: "This is the static, good looking, and responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
@@ -164,7 +164,7 @@ export const projects = [
     tech: "HTML and CSS",
     image: project09,
     code: "https://github.com/vishal-kumaar/Project-11-Hosting-Landing-Page",
-    live: "https://html5-css3-project-11.netlify.app/",
+    live: "https://hosting-landing-site.vercel.app/",
     desc: "This is the static, good looking, and responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
@@ -172,7 +172,7 @@ export const projects = [
     tech: "HTML and CSS",
     image: project10,
     code: "https://github.com/vishal-kumaar/Project-10-Interior-Design-Landing-Page",
-    live: "https://html5-css3-project-10.netlify.app/",
+    live: "https://interior-design-landing-site.vercel.app/",
     desc: "This is the static, good looking, and responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
@@ -180,7 +180,7 @@ export const projects = [
     tech: "HTML and CSS",
     image: project11,
     code: "https://github.com/vishal-kumaar/Project-12-Business-Landing-Page",
-    live: "https://html5-css3-project-12.netlify.app/",
+    live: "https://business-landing-site.vercel.app/",
     desc: "This is the static, good looking, and responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
@@ -188,7 +188,7 @@ export const projects = [
     tech: "HTML and CSS",
     image: project12,
     code: "https://github.com/vishal-kumaar/Project-13-SAAS-Landing-Page",
-    live: "https://html5-css3-project-13.netlify.app/",
+    live: "https://saas-landing-site.vercel.app/",
     desc: "This is the static, good looking, and responsive website. The tech stack that I use tp create this website is HTML and CSS.",
   },
   {
@@ -196,7 +196,7 @@ export const projects = [
     tech: "HTML, CSS, and JavaScript",
     image: project13,
     code: "https://github.com/vishal-kumaar/Rock-Paper-Scissors",
-    live: "https://rock-paper-and-scissor.netlify.app/",
+    live: "https://saas-landing-site.vercel.app/",
     desc: "This is a very popular game and we must have played it at least once in our life. This website is also responsive also means we can use this in any size of device. The tech stack I use to create this website is HTML, CSS, and JavaScript.",
   },
   {
@@ -212,7 +212,7 @@ export const projects = [
     tech: "HTML, CSS, and JavaScript",
     image: project15,
     code: "https://github.com/vishal-kumaar/Shade-Up",
-    live: "https://shade-up.netlify.app/",
+    live: "https://shadeup.vercel.app/",
     desc: "This is the static, good looking, and responsite website. This website have functionality such as color convertor, see color by RGB range, see color by HEX code, generate random color, etc. The tech stack that I use to create this website is HTML, CSS, and JavaScript.",
   },
   {
@@ -220,7 +220,7 @@ export const projects = [
     tech: "HTML and CSS",
     image: project16,
     code: "https://github.com/vishal-kumaar/Project-15-Project-Design-Landing-Page",
-    live: "https://html5-css3-project-15.netlify.app/",
+    live: "https://design-landing-site.vercel.app/",
     desc: "This is a static, good looking and responsive website. The tech stack that I use to create this website is HTML and CSS.",
   },
   {
@@ -228,7 +228,7 @@ export const projects = [
     tech: "HTML and TailwindCSS",
     image: project17,
     code: "https://github.com/vishal-kumaar/Rode-Clone-TailwindCSS",
-    live: "https://tailwindcss-rode-clone.netlify.app/",
+    live: "https://vishal-kumaar.github.io/Rode-Clone-TailwindCSS/",
     desc: "This is the homepage clone of the Rode's website. This is the static, good looking, and responsite website. The tech stack that I use to create this website is HTML and Tailwind CSS",
   },
   {
@@ -236,7 +236,7 @@ export const projects = [
     tech: "HTML and TailwindCSS",
     image: project18,
     code: "https://github.com/vishal-kumaar/Paytm-Clone-TailwindCSS",
-    live: "https://tailwindcss-paytm-clone.netlify.app/",
+    live: "https://vishal-kumaar.github.io/Paytm-Clone-TailwindCSS/",
     desc: "This is the homepage clone of the Paytn's website. This is the static, good looking, and responsite website. The tech stack that I use to create this website is HTML and Tailwind CSS",
   },
   {
@@ -244,7 +244,7 @@ export const projects = [
     tech: "HTML and TailwindCSS",
     image: project19,
     code: "https://github.com/vishal-kumaar/Shopify-Clone-TailwindCSS",
-    live: "https://tailwindcss-shopify-clone.netlify.app/",
+    live: "https://vishal-kumaar.github.io/Shopify-Clone-TailwindCSS/",
     desc: "This is the homepage clone of the Shopify's website. This is the static, good looking, and responsite website. The tech stack that I use to create this website is HTML and Tailwind CSS",
   },
   {
@@ -252,7 +252,7 @@ export const projects = [
     tech: "ReactJs and TaiwindCSS",
     image: project20,
     code: "https://github.com/vishal-kumaar/react-calculator",
-    live: "https://arithmatic-calculator.netlify.app/",
+    live: "https://calcmaster.vercel.app/",
     desc: "This is the static, good looking, and responsive calculator website. This calculator is only for simple mathematical operation such as Addition, Subtraction, Multiplication, and Division. This website also have dark mode theme. The tech stack that I use to create this calculator is ReactJs and Taiwlind CSS",
   },
   {
@@ -268,7 +268,7 @@ export const projects = [
     tech: "ReactJs and TailwindCSS",
     image: project22,
     code: "https://github.com/vishal-kumaar/personal-portfolio",
-    live: "https://vishal-kumar.netlify.app/",
+    live: "https://vishalkumar.vercel.app/",
     desc: "This is static, good looking, and responstive portfolio site. The tech stack that I use to create this portfolio site is ReactJs and Tailwind CSS",
   },
 ].reverse();
@@ -276,7 +276,8 @@ export const projects = [
 export const blogs = [
   {
     title: "CSS Position",
-    brief: "The CSS Position Property: Everything You Need to Know · Hello! To all my readers, I hope that you all guys are fine. In this article, I will try to...",
+    brief:
+      "The CSS Position Property: Everything You Need to Know · Hello! To all my readers, I hope that you all guys are fine. In this article, I will try to...",
     readTime: "4 min read",
     date: "Jul 19, 2022",
     link: "https://vishal-kumar.hashnode.dev/css-position",
@@ -285,7 +286,8 @@ export const blogs = [
   },
   {
     title: "CSS Selectors for Beginners",
-    brief: "Learn CSS Selectors in a simple way with examples · What is CSS Selectors? CSS selectors are used to defining the elements you want to style with CSS....",
+    brief:
+      "Learn CSS Selectors in a simple way with examples · What is CSS Selectors? CSS selectors are used to defining the elements you want to style with CSS....",
     readTime: "4 min read",
     date: "Aug 28, 2022",
     link: "https://vishal-kumar.hashnode.dev/css-selectors-for-beginners",
@@ -294,7 +296,8 @@ export const blogs = [
   },
   {
     title: "CSS Box Model",
-    brief: "The CSS Box Model: (Borders, Margins, Padding and Content itself) · Hello to all my readers, I hope that you all guys are fine. In this article, I will...",
+    brief:
+      "The CSS Box Model: (Borders, Margins, Padding and Content itself) · Hello to all my readers, I hope that you all guys are fine. In this article, I will...",
     readTime: "3 min read",
     date: "Dec 30, 2022",
     link: "https://vishal-kumar.hashnode.dev/css-box-model",
@@ -303,7 +306,8 @@ export const blogs = [
   },
   {
     title: "CSS Flexbox",
-    brief: "Understand CSS Flexbox in a simple way with examples · What is Flexbox? Flexbox is a tool that is used to design layouts in CSS very easily and quickly...",
+    brief:
+      "Understand CSS Flexbox in a simple way with examples · What is Flexbox? Flexbox is a tool that is used to design layouts in CSS very easily and quickly...",
     readTime: "6 min read",
     date: "Jan 12, 2023",
     link: "https://vishal-kumar.hashnode.dev/css-flexbox",
@@ -312,7 +316,8 @@ export const blogs = [
   },
   {
     title: "JavaScript Hoisting",
-    brief: "JavaScript Hoisting: How It Works and Things to Keep in Mind · JavaScript is a programming language that is widely used on the web, both on the front...",
+    brief:
+      "JavaScript Hoisting: How It Works and Things to Keep in Mind · JavaScript is a programming language that is widely used on the web, both on the front...",
     readTime: "5 min read",
     date: "Mar 7, 2023",
     link: "https://vishal-kumar.hashnode.dev/javascript-hoisting",
@@ -321,7 +326,8 @@ export const blogs = [
   },
   {
     title: "JavaScript Execution Context",
-    brief: "Understand how JavaScript works behind the scene · In the world of programming, the execution context is one of the fundamental concepts that is used in...",
+    brief:
+      "Understand how JavaScript works behind the scene · In the world of programming, the execution context is one of the fundamental concepts that is used in...",
     readTime: "5 min read",
     date: "Mar 12, 2023",
     link: "https://vishal-kumar.hashnode.dev/javascript-execution-context",
@@ -330,7 +336,8 @@ export const blogs = [
   },
   {
     title: "JavaScript Call Stack",
-    brief: "Understand Call Stack in simple way · JavaScript is a popular programming language that is widely used to create interactive and dynamic web pages. One...",
+    brief:
+      "Understand Call Stack in simple way · JavaScript is a popular programming language that is widely used to create interactive and dynamic web pages. One...",
     readTime: "3 min read",
     date: "Mar 19, 2023",
     link: "https://vishal-kumar.hashnode.dev/javascript-call-stack",
