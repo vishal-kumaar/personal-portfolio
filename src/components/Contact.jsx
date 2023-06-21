@@ -38,7 +38,7 @@ export default function Contact(props) {
           </div>
         </a>
       </div>
-      <div className="flex flex-row flex-wrap md:flex-col md:flex-nowrap mt-10 md:mt-0">
+      <div className="flex flex-row flex-wrap mx-6 md:flex-col md:flex-nowrap mt-10 md:mt-0">
         {socialLinks.linkedin && (
           <a
             href={socialLinks.linkedin}
