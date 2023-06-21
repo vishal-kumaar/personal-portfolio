@@ -56,15 +56,15 @@ export default function Projects(props) {
             <h1 className="mb-4 text-3xl font-signika text-black">
               Projects
             </h1>
-            <hr className="border-black/40 mb-10" />
-            <div className="flex flex-wrap gap-10 justify-between">
+            <hr className="border-black/40" />
+            <div className="flex flex-wrap">
               {projects.length > 0 &&
                 projects
                   .slice(6 * (page - 1), page * 6)
                   .map((project, index) => (
                     <div
                       key={index}
-                      className="w-full sm:w-[44%] lg:w-[28%] p-4 rounded-md bg-black/5 shadow-2xl cursor-pointer hover:bg-black/20"
+                      className="w-full sm:w-[44%] lg:w-[28%] mx-4 sm:mx-[3%] lg:mx-[2.66%] mt-10 p-4 rounded-md bg-black/5 mb-4 shadow-2xl cursor-pointer hover:bg-black/20"
                       onClick={() => openModal(page - 1 + index)}
                     >
                       <img

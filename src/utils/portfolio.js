@@ -21,6 +21,7 @@ import project19 from "../assets/projects/project19.webp";
 import project20 from "../assets/projects/project20.webp";
 import project21 from "../assets/projects/project21.webp";
 import project22 from "../assets/projects/project22.webp";
+import project23 from "../assets/projects/project23.webp";
 
 export const user = {
   name: "Vishal Kumar",
@@ -270,6 +271,14 @@ export const projects = [
     code: "https://github.com/vishal-kumaar/personal-portfolio",
     live: "https://vishalkumar.vercel.app/",
     desc: "This is static, good looking, and responstive portfolio site. The tech stack that I use to create this portfolio site is ReactJs and Tailwind CSS",
+  },
+  {
+    name: "Movies Picker",
+    tech: "ReactJs, TailwindCSS, Axios and TMDB API",
+    image: project23,
+    code: "https://github.com/vishal-kumaar/moviespicker",
+    live: "https://movies-picker.vercel.app/",
+    desc: "This is the dynamic, good looking, and responsive movies picking application. This website have many functionalities such as explore different catagories of movie, see details related to any movie (such as cast, crew, videos, budget, revenue, original language, etc.), search any movie and personality related to movie, recommend movies based on different catagories and filters, etc. The tech stack that I use to create this movies picker application is ReactJs, TailwindCSS, Axios, and TMDB API.",
   },
 ].reverse();
 
