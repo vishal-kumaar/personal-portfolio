@@ -28,7 +28,7 @@ export const user = {
   title: "Hey folks,",
   subtitle: ["Vishal Kumar", "Web Developer", "Coder"],
   description:
-    "I am a passionate and hardworking person who loves learning new things. I work well on my own and in groups. My goal is to be able to contribute fully as soon as possible.",
+    "Enthusiastic and motivated JavaScript developer with a solid foundation in HTML, CSS, JavaScript, and Frameworks. Eager to contribute to web development projects and learn new technologies. Strong attention to detail and commitment to producing highquality code.",
   profilePic: profilePic,
   resumeLink:
     "https://drive.google.com/file/d/1xFILBFcQEqLt7oDTQfFx2-y4NLA-s3Et/view",
