@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import { blogs } from "../utils/portfolio";
-import nextIcon from "../assets/images/next.svg";
 import clock from "../assets/images/clock.svg";
+import Pagination from "./Pagination";
+import { useSearchParams } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Blog(props) {
-  const [firstIndex, setFirstIndex] = useState(0);
-  const [lastIndex, setLastIndex] = useState(9);
-  const [nextBtn, setNextBtn] = useState("visible");
-  const [prevBtn, setPrevBtn] = useState("invisible");
   const [isLoading, setLoading] = useState(false);
+  const [searchParams, setSearchParams] = useSearchParams();
+  let page = Number(searchParams.get("page"));
+  if (!page) {
+    page = 1;
+  }
 
   const handleLoading = () => {
     setLoading(true);
@@ -17,25 +20,18 @@ export default function Blog(props) {
     }, 1);
   };
 
-  const nextBlog = () => {
-    if (lastIndex + 9 >= blogs.length) {
-      setNextBtn("invisible");
-    }
-    setFirstIndex(lastIndex);
-    setLastIndex(lastIndex + 9);
-    setPrevBtn("visible");
-    handleLoading();
-  };
+  useEffect(
+    () => {
+      searchParams.set("page", page);
+      setSearchParams(searchParams);
+    },
+    // eslint-disable-next-line
+    []
+  );
 
-  const previousBlog = () => {
-    if (firstIndex === 9) {
-      setPrevBtn("invisible");
-    }
-    setLastIndex(firstIndex);
-    setFirstIndex(firstIndex - 9);
-    setNextBtn("visible");
+  useEffect(() => {
     handleLoading();
-  };
+  }, [page]);
 
   return (
     <>
@@ -48,8 +44,8 @@ export default function Blog(props) {
           <div className="mx-auto w-fit">
             <h1 className="mb-4 text-3xl font-signika text-black">Blogs</h1>
             <hr className="border-black/40" />
-            {blogs &&
-              blogs.slice(firstIndex, lastIndex).map((blog, index) => (
+            {blogs.length > 0 &&
+              blogs.slice(6 * (page - 1), page * 6).map((blog, index) => (
                 <div
                   key={index}
                   className="flex mt-12 items-center flex-col-reverse sm:flex-row"
@@ -70,11 +66,9 @@ export default function Blog(props) {
                       </div>
                     </div>
                     <h3 className="font-firasans text-base text-slate-600 max-w-xl">
-                      {blog.brief} {" "}
+                      {blog.brief}{" "}
                       <span className="text-blue-500">
-                        <a href={blog.link}>
-                          read more
-                        </a>
+                        <a href={blog.link}>read more</a>
                       </span>
                     </h3>
                   </div>
@@ -85,32 +79,7 @@ export default function Blog(props) {
                   />
                 </div>
               ))}
-            {blogs.length > 9 && (
-              <div className="flex justify-between font-signika mt-20">
-                <button
-                  onClick={previousBlog}
-                  className={`${prevBtn} flex items-center bg-blue-700 hover:bg-blue-500 shadow-xl py-1 px-2 text-white ouline-white border-none rounded`}
-                >
-                  <img
-                    src={nextIcon}
-                    alt="previous"
-                    className="rotate-180 invert w-3 h-3 mr-[5px]"
-                  />
-                  <p>Previous</p>
-                </button>
-                <button
-                  onClick={nextBlog}
-                  className={`${nextBtn} flex items-center bg-blue-700 hover:bg-blue-500 shadow-xl py-1 px-2 text-white ouline-white border-none rounded`}
-                >
-                  <p>Next</p>
-                  <img
-                    src={nextIcon}
-                    alt="next"
-                    className="invert w-3 h-3 ml-[5px]"
-                  />
-                </button>
-              </div>
-            )}
+            <Pagination totalPages={Math.ceil(blogs.length / 6)} />
           </div>
         </div>
       )}
