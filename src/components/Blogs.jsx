@@ -2,15 +2,17 @@ import React, { useState } from "react";
 import { blogs } from "../utils/portfolio";
 import clock from "../assets/images/clock.svg";
 import Pagination from "./Pagination";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
 
 export default function Blog(props) {
+  const navigate = useNavigate();
   const [isLoading, setLoading] = useState(false);
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   let page = Number(searchParams.get("page"));
-  if (!page) {
-    page = 1;
+  
+  if (!page || page < 0) {
+    navigate("?page=1", {replace: true});
   }
 
   const handleLoading = () => {
@@ -20,18 +22,19 @@ export default function Blog(props) {
     }, 1);
   };
 
-  useEffect(
-    () => {
-      searchParams.set("page", page);
-      setSearchParams(searchParams);
-    },
-    // eslint-disable-next-line
-    []
-  );
-
   useEffect(() => {
     handleLoading();
   }, [page]);
+
+  if (blogs.length === 0){
+    return null;
+  }
+
+  const blogObj = blogs.slice(6 * (page - 1), page * 6);
+
+  if (blogObj.length === 0){
+    return null;
+  }
 
   return (
     <>
@@ -44,8 +47,7 @@ export default function Blog(props) {
           <div className="mx-auto w-fit">
             <h1 className="mb-4 text-3xl font-signika text-black">Blogs</h1>
             <hr className="border-black/40" />
-            {blogs.length > 0 &&
-              blogs.slice(6 * (page - 1), page * 6).map((blog, index) => (
+            {blogObj.map((blog, index) => (
                 <div
                   key={index}
                   className="flex mt-12 items-center flex-col-reverse sm:flex-row"
