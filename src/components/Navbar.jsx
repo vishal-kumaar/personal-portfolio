@@ -21,47 +21,41 @@ export default function Navbar() {
       <nav
         className={`text-white flex justify-between items-center px-4 md:px-10 pt-7 pb-3 ${navBg}`}
       >
-        <Link to="/" className="font-cursive text-3xl">
-          {user.name}
-        </Link>
-        <Link to="/" className="hidden md:block">
-          <div className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md">
-            <NavLink to="/" activeclassname="active">
-              Home
-            </NavLink>
-          </div>
-          <Link
-            to="/projects"
-            className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md"
-          >
-            <NavLink to="/projects" activeclassname="active">
-              Projects
-            </NavLink>
+        <div>
+          <Link to="/" className="font-cursive text-3xl">
+            {user.name}
           </Link>
-          <Link
-            to="/blogs"
-            className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md"
+        </div>
+        <div className="flex gap-3">
+          <NavLink
+          to="/"
+            activeclassname
+            className="inline cursor-pointer ml-6 p-1.5 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md"
           >
-            <NavLink to="/blogs" activeclassname="active">
-              Blogs
-            </NavLink>
-          </Link>
-          <Link
-            to="/contact"
-            className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md"
+            Home
+          </NavLink>
+          <NavLink
+          to="/projects?page=1"
+            activeclassname
+            className="inline cursor-pointer ml-6 p-1.5 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md"
           >
-            <NavLink to="/contact" activeclassname="active">
-              Contact
-            </NavLink>
-          </Link>
-        </Link>
-        <div className="block md:hidden">
-          <img
-            src={hamburger}
-            alt="menu"
-            className="invert w-6"
-            onClick={toggleSidebar}
-          />
+          Project
+          </NavLink>
+          <NavLink
+          to="/blogs?page=1"
+            activeclassname
+            className="inline cursor-pointer ml-6 p-1.5 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md"
+          >
+            Blogs
+          </NavLink>
+          <NavLink
+          to="/contact"
+            activeclassname
+            className="inline cursor-pointer ml-6 p-1.5 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md"
+          >
+            Contact
+          </NavLink>
+          
         </div>
       </nav>
     </Headroom>

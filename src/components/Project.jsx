@@ -12,7 +12,6 @@ export default function Project() {
   if (Object.keys(project).length === 0){
     return null;
   }
-  console.log(project)
 
   return (
     <div

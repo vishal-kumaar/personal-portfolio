@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 .active{
-    border-bottom: 2px solid #fff;
-    padding-bottom: 3px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
