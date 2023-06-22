@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { technicalSkills, softSkills } from "../utils/portfolio";
 import Seperator from "./Seperator";
 
-export default function Skills(props) {
+export default function Skills() {
   const myRef1 = useRef();
   const myRef2 = useRef();
   const [animate1, setAnimate1] = useState("-translate-x-full");

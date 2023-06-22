@@ -7,7 +7,7 @@ import facebook from "../assets/images/facebook.svg";
 import twitter from "../assets/images/twitter.svg";
 import file from "../assets/images/file.svg";
 
-export default function Home(props) {
+export default function Home() {
   return (
     <main
       className={`bg-gradient-to-r from-sky-500 to-indigo-500 flex justify-center items-center flex-col-reverse lg:flex-row text-white px-6 py-14 lg:my-0`}

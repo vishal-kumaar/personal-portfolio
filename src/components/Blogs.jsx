@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { blogs } from "../utils/portfolio";
 import clock from "../assets/images/clock.svg";
 import Pagination from "./Pagination";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
 import NoResultFound from "./NoResultFound";
+import { useContext } from "react";
+import LoadingContext from "../state/loading/LoadingContext";
 
 export default function Blog(props) {
+  const { loading, handleLoading } = useContext(LoadingContext);
   const navigate = useNavigate();
-  const [isLoading, setLoading] = useState(false);
   const [searchParams] = useSearchParams();
   let page = Number(searchParams.get("page"));
 
@@ -16,16 +18,13 @@ export default function Blog(props) {
     navigate("?page=1", { replace: true });
   }
 
-  const handleLoading = () => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 1);
-  };
-
-  useEffect(() => {
-    handleLoading();
-  }, [page]);
+  useEffect(
+    () => {
+      handleLoading();
+    },
+    // eslint-disable-next-line
+    [page]
+  );
 
   if (blogs.length === 0) {
     return <NoResultFound />;
@@ -39,7 +38,7 @@ export default function Blog(props) {
 
   return (
     <>
-      {isLoading ? (
+      {loading ? (
         <div className="py-14"></div>
       ) : (
         <div className={`py-14 px-5 md:px-10`}>

@@ -7,11 +7,12 @@ import { useEffect } from "react";
 import NoResultFound from "./NoResultFound";
 import { useContext } from "react";
 import ModalContext from "../state/modal/ModalContext";
+import LoadingContext from "../state/loading/LoadingContext";
 
 export default function Projects() {
+  const { loading, handleLoading } = useContext(LoadingContext);
   const { toggleModal } = useContext(ModalContext);
   const navigate = useNavigate();
-  const [isLoading, setLoading] = useState(false);
   const [project, setProject] = useState(null);
   const [searchParams] = useSearchParams();
   let page = Number(searchParams.get("page"));
@@ -20,16 +21,13 @@ export default function Projects() {
     navigate("?page=1", { replace: true });
   }
 
-  const handleLoading = () => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 1);
-  };
-
-  useEffect(() => {
-    handleLoading();
-  }, [page]);
+  useEffect(
+    () => {
+      handleLoading();
+    },
+    // eslint-disable-next-line
+    [page]
+  );
 
   if (projects.length === 0) {
     return <NoResultFound />;
@@ -49,7 +47,7 @@ export default function Projects() {
   return (
     <>
       <Project project={project} />
-      {isLoading ? (
+      {loading ? (
         <div className="py-14"></div>
       ) : (
         <div className={`py-14`}>
