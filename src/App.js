@@ -12,7 +12,6 @@ import PageNotFound from "./components/PageNotFound";
 
 function App() {
   const [sidebar, setSidebar] = useState(false);
-  const [opacity, setOpacity] = useState("opacity-100");
   const [modal, setModal] = useState(false);
   document.body.classList = "bg-black";
 
@@ -26,11 +25,9 @@ function App() {
   const toggleSidebar = () => {
     if (sidebar === true) {
       setSidebar(false);
-      setOpacity("opacity-100");
       document.body.style.overflow = "auto";
     } else {
       setSidebar(true);
-      setOpacity("opacity-30");
       document.body.style.overflow = "hidden";
     }
   };
@@ -39,11 +36,9 @@ function App() {
     if (modal === true) {
       setModal(false);
       document.body.style.overflow = "auto";
-      setOpacity("opacity-100");
     } else {
       setModal(true);
       document.body.style.overflow = "hidden";
-      setOpacity("opacity-30");
     }
   };
 
@@ -62,7 +57,7 @@ function App() {
         sidebar={sidebar}
         scroll={scroll}
       />
-      <div className={`flex flex-col ${opacity} min-h-screen  transition-opacity ease-in-out duration-500`}>
+      <div className={`flex flex-col min-h-screen transition-opacity ease-in-out duration-500`}>
         <div className="flex-grow bg-white">
           <Navbar
             toggleSidebar={toggleSidebar}
