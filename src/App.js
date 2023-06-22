@@ -9,9 +9,9 @@ import Projects from "./components/Projects";
 import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
 import PageNotFound from "./components/PageNotFound";
+import State from "./state";
 
 function App() {
-  const [sidebar, setSidebar] = useState(false);
   const [modal, setModal] = useState(false);
   document.body.classList = "bg-black";
 
@@ -20,16 +20,6 @@ function App() {
       top: 0,
       behavior: "auto",
     });
-  };
-
-  const toggleSidebar = () => {
-    if (sidebar === true) {
-      setSidebar(false);
-      document.body.style.overflow = "auto";
-    } else {
-      setSidebar(true);
-      document.body.style.overflow = "hidden";
-    }
   };
 
   const toggleModal = () => {
@@ -43,53 +33,47 @@ function App() {
   };
 
   window.onclick = (event) => {
-    if (event.target.id === "sidebar") {
-      toggleSidebar();
-    } else if (event.target.id === "project") {
+    if (event.target.id === "project") {
       toggleModal();
     }
   };
 
   return (
-    <Router>
-      <Sidebar
-        toggleSidebar={toggleSidebar}
-        sidebar={sidebar}
-        scroll={scroll}
-      />
-      <div className={`flex flex-col min-h-screen transition-opacity ease-in-out duration-500`}>
-        <div className="flex-grow bg-white">
-          <Navbar
-            toggleSidebar={toggleSidebar}
-            sidebar={sidebar}
-            scroll={scroll}
-          />
+    <State>
+      <Router>
+        <Sidebar scroll={scroll} />
+        <div
+          className={`flex flex-col min-h-screen transition-opacity ease-in-out duration-500`}
+        >
+          <div className="flex-grow bg-white">
+            <Navbar scroll={scroll} />
+          </div>
+          <div className="flex-grow flex flex-col bg-white">
+            <Routes>
+              <Route exect path="*" element={<PageNotFound />}></Route>
+              <Route
+                exect
+                path="/"
+                element={
+                  <>
+                    <Home />
+                    <Skills />
+                  </>
+                }
+              ></Route>
+              <Route
+                exect
+                path="/projects"
+                element={<Projects modal={modal} toggleModal={toggleModal} />}
+              ></Route>
+              <Route exect path="/blogs" element={<Blogs />}></Route>
+              <Route exect path="/contact" element={<Contact />}></Route>
+            </Routes>
+          </div>
+          <Footer />
         </div>
-        <div className="flex-grow flex flex-col bg-white">
-          <Routes>
-            <Route exect path="*" element={<PageNotFound />}></Route>
-            <Route
-              exect
-              path="/"
-              element={
-                <>
-                  <Home />
-                  <Skills />
-                </>
-              }
-            ></Route>
-            <Route
-              exect
-              path="/projects"
-              element={<Projects modal={modal} toggleModal={toggleModal} />}
-            ></Route>
-            <Route exect path="/blogs" element={<Blogs />}></Route>
-            <Route exect path="/contact" element={<Contact />}></Route>
-          </Routes>
-        </div>
-        <Footer />
-      </div>
-    </Router>
+      </Router>
+    </State>
   );
 }
 export default App;

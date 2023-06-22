@@ -12,18 +12,22 @@ import github from "../assets/images/github.svg";
 import instagram from "../assets/images/instagram.svg";
 import facebook from "../assets/images/facebook.svg";
 import twitter from "../assets/images/twitter.svg";
+import { useContext } from "react";
+import SidebarContext from "../state/siderbar/SidebarContext";
 
 export default function Sidebar(props) {
+  const {sidebar, toggleSidebar} = useContext(SidebarContext);
+
   return (
     <div
       className={`${
-        props.sidebar ? "z-50 fixed top-0 left-0" : "-z-50 static"
+        sidebar ? "z-50 fixed top-0 left-0" : "-z-50 static"
       } bg-transparent/60 w-full h-full`}
     >
       <div
         id="sidebar"
         className={`bg-transparent ${
-          props.sidebar ? "translate-x-0" : "-translate-x-full"
+          sidebar ? "translate-x-0" : "-translate-x-full"
         } w-full h-full fixed top-0 left-0 z-30 transition duration-700 ease-in-out`}
       >
         <aside
@@ -36,7 +40,7 @@ export default function Sidebar(props) {
                 src={close}
                 alt="close"
                 className="w-7 cursor-pointer"
-                onClick={props.toggleSidebar}
+                onClick={toggleSidebar}
               />
             </div>
             <h1 className="font-firasans font-bold mt-3 text-lg text-black/80">

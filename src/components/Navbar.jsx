@@ -3,8 +3,11 @@ import Headroom from "react-headroom";
 import { user } from "../utils/portfolio";
 import hamburger from "../assets/images/hamburger.svg";
 import { Link, NavLink } from "react-router-dom";
+import { useContext } from "react";
+import SidebarContext from "../state/siderbar/SidebarContext";
 
 export default function Navbar(props) {
+  const { toggleSidebar } = useContext(SidebarContext);
   let [navBg, setNavBg] = useState(
     "bg-gradient-to-r from-sky-500 to-indigo-500"
   );
@@ -72,7 +75,7 @@ export default function Navbar(props) {
             src={hamburger}
             alt="menu"
             className="invert w-6"
-            onClick={props.toggleSidebar}
+            onClick={toggleSidebar}
           />
         </div>
       </nav>
