@@ -4,6 +4,7 @@ import Project from "./Project";
 import Pagination from "./Pagination";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
+import NoResultFound from "./NoResultFound";
 
 export default function Projects(props) {
   const navigate = useNavigate();
@@ -33,13 +34,13 @@ export default function Projects(props) {
   }, [page]);
 
   if (projects.length === 0) {
-    return null;
+    return <NoResultFound />;
   }
 
   const projectObj = projects.slice(6 * (page - 1), page * 6);
 
   if (projectObj.length === 0) {
-    return null;
+    return <NoResultFound />;
   }
 
   return (

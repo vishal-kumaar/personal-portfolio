@@ -4,6 +4,7 @@ import clock from "../assets/images/clock.svg";
 import Pagination from "./Pagination";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
+import NoResultFound from "./NoResultFound";
 
 export default function Blog(props) {
   const navigate = useNavigate();
@@ -27,13 +28,13 @@ export default function Blog(props) {
   }, [page]);
 
   if (blogs.length === 0){
-    return null;
+    return <NoResultFound />;
   }
 
   const blogObj = blogs.slice(6 * (page - 1), page * 6);
 
   if (blogObj.length === 0){
-    return null;
+    return <NoResultFound />;
   }
 
   return (
