@@ -51,10 +51,10 @@ export default function Projects(props) {
         project={project}
       />
       {isLoading ? (
-        <div className="py-14 bg-white"></div>
+        <div className="py-14"></div>
       ) : (
         <div
-          className={`py-14 bg-white ${props.opacity} transition-opacity duration-500 ease-in-out`}
+          className={`py-14`}
         >
           <div className="mx-4 md:mx-10">
             <h1 className="mb-4 text-3xl font-signika text-black">Projects</h1>

@@ -16,7 +16,7 @@ export default function Navbar(props) {
       className="bg-transparent"
     >
       <nav
-        className={`${props.opacity} text-white flex justify-between items-center px-4 md:px-10 pt-7 pb-3 ${navBg} transform ease-in-out duration-500`}
+        className={`text-white flex justify-between items-center px-4 md:px-10 pt-7 pb-3 ${navBg}`}
       >
         <Link to="/" className="font-cursive text-3xl" onClick={props.scroll}>
           {user.name}

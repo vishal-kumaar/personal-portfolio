@@ -10,7 +10,7 @@ import file from "../assets/images/file.svg";
 export default function Home(props) {
   return (
     <main
-      className={`${props.opacity} bg-gradient-to-r from-sky-500 to-indigo-500 flex justify-center items-center flex-col-reverse lg:flex-row text-white px-6 py-14 lg:my-0 transition-opacity ease-in-out duration-500`}
+      className={`bg-gradient-to-r from-sky-500 to-indigo-500 flex justify-center items-center flex-col-reverse lg:flex-row text-white px-6 py-14 lg:my-0`}
     >
       <section className="max-w-2xl">
         <div className="text-4xl font-bold font-poppins mb-4">{user.title}</div>
@@ -94,7 +94,7 @@ export default function Home(props) {
             href={user.resumeLink}
             target="_blank"
             rel="noreferrer"
-            className="w-fit bg-white flex items-center py-2 px-4 rounded shadow-xl shadow-black/20 outline-black transition ease-in-out duration-300 hover:-translate-y-1 hover:shadow-black/30 h-10"
+            className="w-fit flex items-center py-2 px-4 rounded shadow-xl shadow-black/20 outline-black transition ease-in-out duration-300 hover:-translate-y-1 hover:shadow-black/30 h-10"
           >
             <img src={file} alt="resume" className="w-4" />
             <div className="ml-2 text-sm font-bold font-signika text-black/90">

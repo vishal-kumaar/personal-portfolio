@@ -57,57 +57,42 @@ function App() {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <Sidebar
+        toggleSidebar={toggleSidebar}
+        sidebar={sidebar}
+        scroll={scroll}
+      />
+      <div className={`flex flex-col ${opacity} min-h-screen  transition-opacity ease-in-out duration-500`}>
+        <div className="flex-grow bg-white">
           <Navbar
             toggleSidebar={toggleSidebar}
             sidebar={sidebar}
-            opacity={opacity}
             scroll={scroll}
           />
-        <div className="flex-grow bg-white">
-          <Sidebar
-            toggleSidebar={toggleSidebar}
-            sidebar={sidebar}
-            scroll={scroll}
-          />
-          </div>
-          <div className="flex-grow flex flex-col bg-white">
+        </div>
+        <div className="flex-grow flex flex-col bg-white">
           <Routes>
-          <Route exect path="*" element={<PageNotFound />}></Route>
+            <Route exect path="*" element={<PageNotFound />}></Route>
             <Route
               exect
               path="/"
               element={
                 <>
-                  <Home opacity={opacity} />
-                  <Skills opacity={opacity} />
+                  <Home />
+                  <Skills />
                 </>
               }
             ></Route>
             <Route
               exect
               path="/projects"
-              element={
-                <Projects
-                  opacity={opacity}
-                  modal={modal}
-                  toggleModal={toggleModal}
-                />
-              }
+              element={<Projects modal={modal} toggleModal={toggleModal} />}
             ></Route>
-            <Route
-              exect
-              path="/blogs"
-              element={<Blogs opacity={opacity} />}
-            ></Route>
-            <Route
-              exect
-              path="/contact"
-              element={<Contact opacity={opacity} />}
-            ></Route>
+            <Route exect path="/blogs" element={<Blogs />}></Route>
+            <Route exect path="/contact" element={<Contact />}></Route>
           </Routes>
         </div>
-        <Footer opacity={opacity} />
+        <Footer />
       </div>
     </Router>
   );

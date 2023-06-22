@@ -2,12 +2,12 @@ import React from "react";
 import avatar from "../assets/images/avatar.svg";
 import Seperator from "./Seperator";
 
-export default function Footer(props) {
+export default function Footer() {
   return (
     <>
-      <Seperator rotate={"rotate-180"} opacity={props.opacity} />
+      <Seperator rotate={"rotate-180"}/>
       <footer
-        className={`py-10 bg-gradient-to-r from-sky-500 to-indigo-500 ${props.opacity} transition-opacity duration-500 ease-in-out`}
+        className={`py-10 bg-gradient-to-r from-sky-500 to-indigo-500`}
       >
         <img src={avatar} alt="avatar" className="w-16 m-auto" />
         <h1 className="text-white/90 text-md font-poppins font-medium text-center mt-2">

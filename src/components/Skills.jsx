@@ -30,8 +30,8 @@ export default function Skills(props) {
 
   return (
     <>
-      <Seperator rotate={"rotate-0"} opacity={props.opacity} />
-      <div className={`px-6 bg-white ${props.opacity} transition-opacity duration-500 ease-in-out`}>
+      <Seperator rotate={"rotate-0"} />
+      <div className={`px-6`}>
         <div className="md:flex md:flex-col items-center py-14">
           <h1 className="text-2xl font-semibold font-firasans mb-10 md:mb-6 md:w-[70%]">
             Technical Skills

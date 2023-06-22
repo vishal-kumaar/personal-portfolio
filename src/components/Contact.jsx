@@ -11,7 +11,7 @@ import file from "../assets/images/file.svg";
 export default function Contact(props) {
   return (
     <div
-      className={`${props.opacity} transition duration-500 ease-in-out bg-white py-14 flex flex-col md:flex-row justify-center items-center`}
+      className={`py-14 flex flex-col md:flex-row justify-center items-center`}
     >
       <div className="mr-auto ml-auto md:mr-32 md:ml-0 w-fit text-center md:text-left">
         <div className="h-52 w-fit mb-3 mx-auto md:mx-0">
