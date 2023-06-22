@@ -6,7 +6,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useContext } from "react";
 import SidebarContext from "../state/siderbar/SidebarContext";
 
-export default function Navbar(props) {
+export default function Navbar() {
   const { toggleSidebar } = useContext(SidebarContext);
   let [navBg, setNavBg] = useState(
     "bg-gradient-to-r from-sky-500 to-indigo-500"
@@ -21,51 +21,36 @@ export default function Navbar(props) {
       <nav
         className={`text-white flex justify-between items-center px-4 md:px-10 pt-7 pb-3 ${navBg}`}
       >
-        <Link to="/" className="font-cursive text-3xl" onClick={props.scroll}>
+        <Link to="/" className="font-cursive text-3xl">
           {user.name}
         </Link>
-        <Link to="/" className="hidden md:block" onClick={props.scroll}>
+        <Link to="/" className="hidden md:block">
           <div className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md">
-            <NavLink to="/" activeclassname="active" onClick={props.scroll}>
+            <NavLink to="/" activeclassname="active">
               Home
             </NavLink>
           </div>
           <Link
             to="/projects"
-            onClick={props.scroll}
             className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md"
           >
-            <NavLink
-              to="/projects"
-              activeclassname="active"
-              onClick={props.scroll}
-            >
+            <NavLink to="/projects" activeclassname="active">
               Projects
             </NavLink>
           </Link>
           <Link
             to="/blogs"
-            onClick={props.scroll}
             className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md"
           >
-            <NavLink
-              to="/blogs"
-              activeclassname="active"
-              onClick={props.scroll}
-            >
+            <NavLink to="/blogs" activeclassname="active">
               Blogs
             </NavLink>
           </Link>
           <Link
             to="/contact"
-            onClick={props.scroll}
             className="inline cursor-pointer ml-6 p-2 rounded font-roboto text-white hover:bg-white hover:text-black hover:shadow-md"
           >
-            <NavLink
-              to="/contact"
-              activeclassname="active"
-              onClick={props.scroll}
-            >
+            <NavLink to="/contact" activeclassname="active">
               Contact
             </NavLink>
           </Link>

@@ -15,8 +15,8 @@ import twitter from "../assets/images/twitter.svg";
 import { useContext } from "react";
 import SidebarContext from "../state/siderbar/SidebarContext";
 
-export default function Sidebar(props) {
-  const {sidebar, toggleSidebar} = useContext(SidebarContext);
+export default function Sidebar() {
+  const { sidebar, toggleSidebar } = useContext(SidebarContext);
 
   return (
     <div
@@ -51,7 +51,6 @@ export default function Sidebar(props) {
               <Link
                 to="/"
                 className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
-                onClick={props.scroll}
               >
                 <img src={home} alt="" className="w-6 h-6 mr-2" />
                 <p>Home</p>
@@ -59,7 +58,6 @@ export default function Sidebar(props) {
               <Link
                 to="/projects"
                 className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
-                onClick={props.scroll}
               >
                 <img src={project} alt="" className="w-6 h-6 mr-2" />
                 <p>Projects</p>
@@ -67,7 +65,6 @@ export default function Sidebar(props) {
               <Link
                 to="/blogs"
                 className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
-                onClick={props.scroll}
               >
                 <img src={blog} alt="" className="w-6 h-6 mr-2" />
                 <p>Blogs</p>
@@ -75,7 +72,6 @@ export default function Sidebar(props) {
               <Link
                 to="/contact"
                 className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
-                onClick={props.scroll}
               >
                 <img src={contact} alt="" className="w-6 h-6 mr-2" />
                 <p>Contact</p>
