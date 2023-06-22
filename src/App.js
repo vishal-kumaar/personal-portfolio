@@ -10,17 +10,11 @@ import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
 import PageNotFound from "./components/PageNotFound";
 import State from "./state";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [modal, setModal] = useState(false);
   document.body.classList = "bg-black";
-
-  const scroll = () => {
-    window.scroll({
-      top: 0,
-      behavior: "auto",
-    });
-  };
 
   const toggleModal = () => {
     if (modal === true) {
@@ -41,12 +35,13 @@ function App() {
   return (
     <State>
       <Router>
-        <Sidebar scroll={scroll} />
+        <ScrollToTop />
+        <Sidebar/>
         <div
           className={`flex flex-col min-h-screen transition-opacity ease-in-out duration-500`}
         >
           <div className="flex-grow bg-white">
-            <Navbar scroll={scroll} />
+            <Navbar/>
           </div>
           <div className="flex-grow flex flex-col bg-white">
             <Routes>
