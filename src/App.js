@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Sidebar from "./components/Sidebar";
@@ -13,35 +13,18 @@ import State from "./state";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-  const [modal, setModal] = useState(false);
   document.body.classList = "bg-black";
-
-  const toggleModal = () => {
-    if (modal === true) {
-      setModal(false);
-      document.body.style.overflow = "auto";
-    } else {
-      setModal(true);
-      document.body.style.overflow = "hidden";
-    }
-  };
-
-  window.onclick = (event) => {
-    if (event.target.id === "project") {
-      toggleModal();
-    }
-  };
 
   return (
     <State>
       <Router>
         <ScrollToTop />
-        <Sidebar/>
+        <Sidebar />
         <div
           className={`flex flex-col min-h-screen transition-opacity ease-in-out duration-500`}
         >
           <div className="flex-grow bg-white">
-            <Navbar/>
+            <Navbar />
           </div>
           <div className="flex-grow flex flex-col bg-white">
             <Routes>
@@ -56,11 +39,7 @@ function App() {
                   </>
                 }
               ></Route>
-              <Route
-                exect
-                path="/projects"
-                element={<Projects modal={modal} toggleModal={toggleModal} />}
-              ></Route>
+              <Route exect path="/projects" element={<Projects />}></Route>
               <Route exect path="/blogs" element={<Blogs />}></Route>
               <Route exect path="/contact" element={<Contact />}></Route>
             </Routes>

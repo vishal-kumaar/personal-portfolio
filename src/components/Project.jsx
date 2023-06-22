@@ -1,29 +1,29 @@
 import React from "react";
 import github from "../assets/images/github.svg";
 import globe from "../assets/images/globe.svg";
+import { useContext } from "react";
+import ModalContext from "../state/modal/ModalContext";
 
 export default function Project(props) {
-  const closeModal = () => {
-    props.toggleModal();
-  };
+  const {modal, toggleModal} = useContext(ModalContext);
 
   return (
     <div
       className={`${
-        props.modal ? "z-50 fixed top-0 left-0" : "-z-50 static"
+        modal ? "z-50 fixed top-0 left-0" : "-z-50 static"
       } bg-transparent/60 w-full h-full`}
     >
       <div
         id="project"
         className={`bg-transparent ${
-          props.modal ? "translate-y-0" : "-translate-y-full"
+          modal ? "translate-y-0" : "-translate-y-full"
         } overflow-auto w-full h-full fixed top-0 left-0 z-30 transition duration-700 ease-in-out flex`}
       >
         {props.project && (
           <div className="bg-white h-fit relative w-[95%] m-auto px-8 py-14 flex flex-col lg:flex-row justify-center items-center rounded-xl">
             <p
               className="absolute right-4 top-1 font-firasans text-4xl cursor-pointer"
-              onClick={closeModal}
+              onClick={toggleModal}
             >
               &times;
             </p>
