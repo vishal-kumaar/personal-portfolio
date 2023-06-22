@@ -14,7 +14,7 @@ export default function Blog(props) {
   const [searchParams] = useSearchParams();
   let page = Number(searchParams.get("page"));
 
-  if (!page || page < 0) {
+  if (!page || page <= 0) {
     navigate("?page=1", { replace: true });
   }
 
@@ -30,7 +30,9 @@ export default function Blog(props) {
     return <NoResultFound />;
   }
 
-  const blogObj = blogs.slice(6 * (page - 1), page * 6);
+  const numOfBlogsInPage = 10;
+
+  const blogObj = blogs.slice(numOfBlogsInPage * (page - 1), page * numOfBlogsInPage);
 
   if (blogObj.length === 0) {
     return <NoResultFound />;
@@ -79,7 +81,7 @@ export default function Blog(props) {
                 />
               </div>
             ))}
-            <Pagination totalPages={Math.ceil(blogs.length / 6)} />
+            <Pagination totalPages={Math.ceil(blogs.length / numOfBlogsInPage)} />
           </div>
         </div>
       )}

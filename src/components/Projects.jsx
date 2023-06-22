@@ -17,7 +17,7 @@ export default function Projects() {
   const [searchParams] = useSearchParams();
   let page = Number(searchParams.get("page"));
 
-  if (!page || page < 0) {
+  if (!page || page <= 0) {
     navigate("?page=1", { replace: true });
   }
 
@@ -77,7 +77,7 @@ export default function Projects() {
                 </div>
               ))}
             </div>
-            <Pagination totalPages={Math.ceil(projects.length / 6)} />
+            <Pagination totalPages={Math.ceil(projects.length / numOfProjectsInPage)} />
           </div>
         </div>
       )}

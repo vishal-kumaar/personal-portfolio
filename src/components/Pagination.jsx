@@ -6,15 +6,6 @@ export default function Pagination({ totalPages }) {
   const [searchParams, setSearchParams] = useSearchParams();
   const page = Number(searchParams.get("page"));
 
-    // const handlePage = move => {
-    //     if (move === "prev"){
-    //         searchParams.set("page", page + 1);
-    //     }
-    //     else{
-    //         searchParams.set("page", p + )
-    //     }
-    // }
-
   return (
     <div className="flex justify-between font-signika mt-10">
       <button
