@@ -11,6 +11,7 @@ import Contact from "./components/Contact";
 import PageNotFound from "./components/PageNotFound";
 import State from "./state";
 import ScrollToTop from "./components/ScrollToTop";
+import Project from "./components/Project";
 
 function App() {
   document.body.classList = "bg-black";
@@ -19,6 +20,7 @@ function App() {
     <State>
       <Router>
         <ScrollToTop />
+        <Project/>
         <Sidebar />
         <div
           className={`flex flex-col min-h-screen transition-opacity ease-in-out duration-500`}

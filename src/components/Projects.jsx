@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { projects } from "../utils/portfolio";
-import Project from "./Project";
 import Pagination from "./Pagination";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
@@ -8,12 +7,13 @@ import NoResultFound from "./NoResultFound";
 import { useContext } from "react";
 import ModalContext from "../state/modal/ModalContext";
 import LoadingContext from "../state/loading/LoadingContext";
+import ProjectContext from "../state/project/ProjectContext";
 
 export default function Projects() {
   const { loading, handleLoading } = useContext(LoadingContext);
+  const { setProject } = useContext(ProjectContext);
   const { toggleModal } = useContext(ModalContext);
   const navigate = useNavigate();
-  const [project, setProject] = useState(null);
   const [searchParams] = useSearchParams();
   let page = Number(searchParams.get("page"));
 
@@ -46,7 +46,6 @@ export default function Projects() {
 
   return (
     <>
-      <Project project={project} />
       {loading ? (
         <div className="py-14"></div>
       ) : (
