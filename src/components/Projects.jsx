@@ -16,14 +16,13 @@ export default function Projects() {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   let page = Number(searchParams.get("page"));
-
-  if (!page || page <= 0) {
-    navigate("?page=1", { replace: true });
-  }
-
+  
   useEffect(
     () => {
       handleLoading();
+      if (!page || page <= 0) {
+        navigate("?page=1", { replace: true });
+      }
     },
     // eslint-disable-next-line
     [page]
