@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   const [sidebar, setSidebar] = useState(false);
@@ -57,13 +58,13 @@ function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
-        <div className="flex-grow bg-white">
           <Navbar
             toggleSidebar={toggleSidebar}
             sidebar={sidebar}
             opacity={opacity}
             scroll={scroll}
           />
+        <div className="flex-grow bg-white">
           <Sidebar
             toggleSidebar={toggleSidebar}
             sidebar={sidebar}
@@ -72,6 +73,7 @@ function App() {
           </div>
           <div className="flex-grow flex flex-col bg-white">
           <Routes>
+          <Route exect path="*" element={<PageNotFound />}></Route>
             <Route
               exect
               path="/"
