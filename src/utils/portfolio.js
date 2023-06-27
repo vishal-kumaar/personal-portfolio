@@ -31,7 +31,7 @@ export const user = {
     "Enthusiastic and motivated JavaScript developer with a solid foundation in HTML, CSS, JavaScript, and Frameworks. Eager to contribute to web development projects and learn new technologies. Strong attention to detail and commitment to producing highquality code.",
   profilePic: profilePic,
   resumeLink:
-    "https://drive.google.com/file/d/1xFILBFcQEqLt7oDTQfFx2-y4NLA-s3Et/view",
+    "https://drive.google.com/file/d/1mMkTkBkH_J7XPBJwzEz9l2gSV5ogtuSr/view?usp=sharing",
   gmail: "vishal.kumar08376@gmail.com",
 };
 
@@ -278,7 +278,7 @@ export const projects = [
     image: project23,
     code: "https://github.com/vishal-kumaar/moviespicker",
     live: "https://movies-picker.vercel.app/",
-    desc: "This is the dynamic, good looking, and responsive movies picking application. This website have many functionalities such as explore different catagories of movie, see details related to any movie (such as cast, crew, videos, budget, revenue, original language, etc.), search any movie and personality related to movie, recommend movies based on different catagories and filters, etc. The tech stack that I use to create this movies picker application is ReactJs, TailwindCSS, Axios, and TMDB API.",
+    desc: "This is the dynamic, good looking, and responsive movies and tv series picking application. This website have many functionalities such as explore different catagories of movie/series, see details related to any movie/series (such as cast, crew, videos, budget, revenue, original language, etc.), search any movie, series and personality related to film industary, get personalized movies or tv series related to your favorite genre, etc. The tech stack that I use to create this movies picker application is ReactJs, TailwindCSS, Axios, and TMDB API.",
   },
 ].reverse();
 
