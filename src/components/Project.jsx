@@ -9,10 +9,6 @@ export default function Project() {
   const { modal, toggleModal } = useContext(ModalContext);
   const { project } = useContext(ProjectContext);
 
-  if (Object.keys(project).length === 0){
-    return null;
-  }
-
   return (
     <div
       className={`${
