@@ -35,7 +35,7 @@ export default function Blog() {
     return <NoResultFound />;
   }
 
-  const numOfBlogsInPage = 5;
+  const numOfBlogsInPage = 8;
 
   const blogObj = blogs.slice(
     numOfBlogsInPage * (page - 1),
