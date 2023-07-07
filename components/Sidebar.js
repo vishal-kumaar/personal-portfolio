@@ -46,7 +46,8 @@ export default function Sidebar() {
             <div className="text-gray-600 font-bold mt-5 flex flex-col">
               <Link
                 href="/"
-                className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center">
+                className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
+                onClick={toggleSidebar}>
                 <Image
                   height={0}
                   width={24}
@@ -58,7 +59,8 @@ export default function Sidebar() {
               </Link>
               <Link
                 href="/projects"
-                className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center">
+                className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
+                onClick={toggleSidebar}>
                 <Image
                   height={0}
                   width={24}
@@ -70,7 +72,8 @@ export default function Sidebar() {
               </Link>
               <Link
                 href="/blogs"
-                className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center">
+                className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
+                onClick={toggleSidebar}>
                 <Image
                   height={0}
                   width={24}
@@ -82,7 +85,8 @@ export default function Sidebar() {
               </Link>
               <Link
                 href="/contact"
-                className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center">
+                className="text-lg font-roboto my-1 py-1 px-2 w-52 flex items-center"
+                onClick={toggleSidebar}>
                 <Image
                   height={0}
                   width={24}
