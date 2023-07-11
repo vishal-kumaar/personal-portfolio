@@ -2,10 +2,10 @@
 
 import React, { useContext, useEffect, useState } from "react";
 import Link from "next/link.js";
-import { user } from "../utils/portfolio";
 import SidebarContext from "../contexts/sidebar/SidebarContext";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import user from "@/portfolio/user";
 
 export default function Navbar() {
   const { toggleSidebar } = useContext(SidebarContext);

@@ -1,11 +1,13 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { user, pageDescriptions, blogs } from "../../utils/portfolio";
 import NoResultFound from "../../components/NoResultFound";
 import Pagination from "../../components/Pagination";
 import { useSearchParams, redirect } from "next/navigation";
 import Image from "next/image";
+import user from "@/portfolio/user";
+import pageDescriptions from "@/portfolio/pageDesc.";
+import blogs from "@/portfolio/blogs";
 
 export default function Blog() {
   const searchParams = useSearchParams();

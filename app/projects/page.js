@@ -1,12 +1,14 @@
 "use client";
 import React, { useContext, useEffect } from "react";
-import { user, pageDescriptions, projects } from "../../utils/portfolio";
 import Pagination from "../../components/Pagination";
 import NoResultFound from "../../components/NoResultFound";
 import ModalContext from "../../contexts/modal/ModalContext";
 import ProjectContext from "../../contexts/project/ProjectContext";
 import { useSearchParams, redirect } from "next/navigation";
 import Image from "next/image";
+import user from "@/portfolio/user";
+import pageDescriptions from "@/portfolio/pageDesc.";
+import projects from "@/portfolio/projects";
 
 export default function Projects() {
   const { setProject } = useContext(ProjectContext);

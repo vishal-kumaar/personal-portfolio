@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { technicalSkills, softSkills } from "../utils/portfolio";
 import Seperator from "./Seperator";
+import technicalSkills from "@/portfolio/technicalSkills";
+import softSkills from "@/portfolio/softSkills";
 
 export default function Skills() {
   const myRef1 = useRef();

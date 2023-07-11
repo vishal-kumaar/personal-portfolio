@@ -4,11 +4,12 @@ import Contexts from "../contexts";
 import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
 import Project from "@/components/Project";
-import {user} from "../utils/portfolio";
+import user from "@/portfolio/user";
+import pageDescriptions from "@/portfolio/pageDesc.";
 
 export const metadata = {
   title: user.name,
-  description: "Welcome to the portfolio website of Vishal Kumar, a talented JavaScript web developer. Explore a collection of impressive projects, insightful blog posts, and innovative web solutions. With a focus on clean code, captivating designs, and user-friendly experiences, Vishal combines technical expertise with creativity to deliver exceptional results. Discover the world of modern web development and be inspired by Vishal Kumar's passion for creating impactful digital experiences",
+  description: pageDescriptions.indexPage,
 };
 
 export default function RootLayout({ children }) {

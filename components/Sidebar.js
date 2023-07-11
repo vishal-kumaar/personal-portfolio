@@ -2,9 +2,10 @@
 
 import React, { useContext } from "react";
 import Link from "next/link";
-import { user, socialLinks } from "../utils/portfolio";
 import SidebarContext from "../contexts/sidebar/SidebarContext";
 import Image from "next/image";
+import user from "@/portfolio/user";
+import socialLinks from "@/portfolio/socialLinks";
 
 export default function Sidebar() {
   const { sidebar, toggleSidebar } = useContext(SidebarContext);

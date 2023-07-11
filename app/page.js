@@ -1,7 +1,9 @@
 import React from "react";
-import { user, pageDescriptions, socialLinks } from "../utils/portfolio";
 import Skills from "../components/Skills";
 import Image from "next/image";
+import user from "@/portfolio/user";
+import pageDescriptions from "@/portfolio/pageDesc.";
+import socialLinks from "@/portfolio/socialLinks";
 
 export const metadata = {
   title: `Home | ${user.name}`,
