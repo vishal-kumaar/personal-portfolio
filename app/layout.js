@@ -20,9 +20,9 @@ export default function RootLayout({ children }) {
         <Contexts>
           <Sidebar />
           <Project />
-          <Navbar />
           <div
             className={`flex flex-col min-h-screen transition-opacity ease-in-out duration-500`}>
+            <Navbar />
             <div className="flex-grow flex flex-col bg-white">{children}</div>
             <Footer />
           </div>
