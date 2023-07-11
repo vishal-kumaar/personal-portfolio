@@ -237,7 +237,7 @@ export const projects = [
   },
   {
     name: "Calculator",
-    tech: "ReactJs and TaiwindCSS",
+    tech: "ReactJs and Taiwind CSS",
     image: "/projects/project20.webp",
     code: "https://github.com/vishal-kumaar/react-calculator",
     live: "https://calcmaster.vercel.app/",
@@ -245,27 +245,27 @@ export const projects = [
   },
   {
     name: "Magic Notes",
-    tech: "MERN and TailwindCSS",
+    tech: "MERN Stack and Tailwind CSS",
     image: "/projects/project21.webp",
     code: "https://github.com/vishal-kumaar/magic-notes",
     live: "https://magicnotes.up.railway.app/",
-    desc: "This is the dynamic, good looking, and responsive note making web application. This website have many functionalities such as dark mode, user login, user signup, forgotten password, update/reset password, create note, edit note, check note, search note, delete note, etc. The tech stack that I use to create this note making web application is MongoDB, ExpressJs, ReactJs, NodeJs, and Tailwind CSS.",
+    desc: "This is the dynamic, good looking, and responsive note making web application. This website have many functionalities such as dark mode, user login, user signup, forgotten password, update/reset password, create note, edit note, check note, search note, delete note, etc. The tech stack that I use to create this note making web application is MongoDb, ExpressJs, ReactJs, NodeJs, and Tailwind CSS.",
   },
   {
     name: "Personal Portfolio",
-    tech: "ReactJs and TailwindCSS",
+    tech: "ReactJs, NextJs, and Tailwind CSS",
     image: "/projects/project22.webp",
     code: "https://github.com/vishal-kumaar/personal-portfolio",
     live: "https://vishalkumar.vercel.app/",
-    desc: "This is static, good looking, and responstive portfolio site. The tech stack that I use to create this portfolio site is ReactJs and Tailwind CSS",
+    desc: "This is static, good looking, and responstive portfolio site. The tech stack that I use to create this portfolio site is ReactJs, NextJs, and Tailwind CSS",
   },
   {
     name: "Movies Picker",
-    tech: "ReactJs, TailwindCSS, Axios and TMDB API",
+    tech: "ReactJs, NextJs, Tailwind CSS, Axios and TMDB API",
     image: "/projects/project23.webp",
     code: "https://github.com/vishal-kumaar/moviespicker",
     live: "https://movies-picker.vercel.app/",
-    desc: "This is the dynamic, good looking, and responsive movies and tv series picking application. This website have many functionalities such as explore different catagories of movie/series, see details related to any movie/series (such as cast, crew, videos, budget, revenue, original language, etc.), search any movie, series and personality related to film industary, get personalized movies or tv series related to your favorite genre, etc. The tech stack that I use to create this movies picker application is ReactJs, TailwindCSS, Axios, and TMDB API.",
+    desc: "This is the dynamic, good looking, and responsive movies and tv series picking application. This website have many functionalities such as explore different catagories of movie/series, see details related to any movie/series (such as cast, crew, videos, budget, revenue, original language, etc.), search any movie, series and personality related to film industary, get personalized movies or tv series related to your favorite genre, etc. The tech stack that I use to create this movies picker application is ReactJs, NextJs, Tailwind CSS, Axios, and TMDB API.",
   },
 ].reverse();
 
