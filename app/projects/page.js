@@ -66,10 +66,10 @@ export default function Projects() {
                 height={0}
                 className="w-full rounded-md border-2"
               />
-              <p className="mt-5 font-firasans text-sm text-black">
+              <p className="mt-5 font-firasans text-sm text-black line-clamp-1">
                 {project.tech}
               </p>
-              <h1 className="font-signika text-xl mt-px">{project.name}</h1>
+              <h1 className="font-signika text-xl mt-px line-clamp-1">{project.name}</h1>
             </div>
           ))}
         </div>
