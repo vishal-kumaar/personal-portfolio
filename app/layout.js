@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Project from "@/components/Project";
 import user from "@/portfolio/user";
 import pageDescriptions from "@/portfolio/pageDesc.";
+import fonts from "./fonts";
 
 export const metadata = {
   title: user.name,
@@ -15,33 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body>
+      <body className={fonts}>
         <Contexts>
           <Sidebar />
           <Project />

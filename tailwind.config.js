@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -17,9 +17,9 @@ module.exports = {
         },
         bottomToTop: {
           "0%": { opacity: "0" },
-          "5%": { 
+          "5%": {
             opacity: "0",
-            transform: "translateY(5px)"
+            transform: "translateY(5px)",
           },
           "10%": {
             opacity: "1",
@@ -42,18 +42,18 @@ module.exports = {
         bottomToTop: "bottomToTop 6s linear infinite 0s",
       },
       fontFamily: {
-        mono: ["Cutive Mono", "monospace"],
-        signika: ["Signika", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
-        firasans: ["Fira Sans", "sans-serif"],
-        cursive: ["Cedarville Cursive", "cursive"],
+        mono: ["var(-font-cutive-mono)"],
+        signika: ["var(--font-signika)"],
+        roboto: ["var(--font-roboto)"],
+        poppins: ["var(--font-poppins)"],
+        firasans: ["var(--font-fira-sans)"],
+        cursive: ["var(--font-cedarville-cursive)"],
       },
       underlineThickness: {
-        '3': '3px',
-        '5': '5px',
+        3: "3px",
+        5: "5px",
       },
     },
   },
   plugins: [],
-}
+};
