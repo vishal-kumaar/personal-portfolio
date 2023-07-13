@@ -1,35 +1,19 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import Seperator from "./Seperator";
 import technicalSkills from "@/portfolio/technicalSkills";
 import softSkills from "@/portfolio/softSkills";
+import AnimateContext from "@/contexts/animate/AnimateContext";
 
 export default function Skills() {
-  const myRef1 = useRef();
-  const myRef2 = useRef();
-  const [animate1, setAnimate1] = useState("-translate-x-full");
-  const [animate2, setAnimate2] = useState("-translate-x-full");
+  const refs = useRef([]);
+  const { isAnimate, addElements, addAnimate } = useContext(AnimateContext);
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      if (entry.isIntersecting) {
-        setAnimate1("animate-fadeInLeft");
-      }
-    });
-    observer.observe(myRef1.current);
-  }, [animate1]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      if (entry.isIntersecting) {
-        setAnimate2("animate-fadeInLeft");
-      }
-    });
-    observer.observe(myRef2.current);
-  }, [animate2]);
+    addElements(2);
+    addAnimate(refs);
+  }, []);
 
   return (
     <>
@@ -39,7 +23,11 @@ export default function Skills() {
           <h1 className="text-2xl font-semibold font-firasans mb-10 md:mb-6 md:w-[70%]">
             Technical Skills
           </h1>
-          <div ref={myRef1} className="md:w-[70%]">
+          <div
+            ref={(myRef) => {
+              refs.current.push(myRef);
+            }}
+            className="md:w-[70%]">
             {technicalSkills &&
               technicalSkills.map((skill, index) => (
                 <div className="flex flex-col my-5 overflow-hidden" key={index}>
@@ -48,13 +36,21 @@ export default function Skills() {
                   </p>
                   <div className="relative rounded-lg h-3 w-full md:w-full text-lg border border-black/70 flex items-center bg-transparent">
                     <p
-                      className={`absolute -top-6 text-right text-red-900 text-md font-mono font-semibold overflow-hidden ${animate1}`}
+                      className={`absolute -top-6 text-right text-red-900 text-md font-mono font-semibold overflow-hidden ${
+                        isAnimate[0]
+                          ? "animate-fadeInLeft"
+                          : "-translate-x-full"
+                      }`}
                       style={{ width: skill.proficiency }}>
                       {skill.proficiency}
                     </p>
                     <div
                       style={{ width: skill.proficiency }}
-                      className={`bg-red-900 rounded-lg h-2 ${animate1}`}></div>
+                      className={`bg-red-900 rounded-lg h-2 ${
+                        isAnimate[0]
+                          ? "animate-fadeInLeft"
+                          : "-translate-x-full"
+                      }`}></div>
                   </div>
                 </div>
               ))}
@@ -65,7 +61,11 @@ export default function Skills() {
           <h1 className="text-2xl font-semibold font-firasans mb-10 md:mb-6 md:w-[70%]">
             Soft Skills
           </h1>
-          <div ref={myRef2} className="md:w-[70%]">
+          <div
+            ref={(myRef) => {
+              refs.current.push(myRef);
+            }}
+            className="md:w-[70%]">
             {softSkills &&
               softSkills.map((skill, index) => (
                 <div className="flex flex-col my-5 overflow-hidden" key={index}>
@@ -74,13 +74,21 @@ export default function Skills() {
                   </p>
                   <div className="relative rounded-lg h-3 w-full md:w-full text-lg border border-black/70 flex items-center bg-transparent">
                     <p
-                      className={`absolute -top-6 text-right text-red-900 text-md font-mono font-semibold overflow-hidden ${animate2}`}
+                      className={`absolute -top-6 text-right text-red-900 text-md font-mono font-semibold overflow-hidden ${
+                        isAnimate[1]
+                          ? "animate-fadeInLeft"
+                          : "-translate-x-full"
+                      }`}
                       style={{ width: skill.proficiency }}>
                       {skill.proficiency}
                     </p>
                     <div
                       style={{ width: skill.proficiency }}
-                      className={`bg-red-900 rounded-lg h-2 ${animate2}`}></div>
+                      className={`bg-red-900 rounded-lg h-2 ${
+                        isAnimate[1]
+                          ? "animate-fadeInLeft"
+                          : "-translate-x-full"
+                      }`}></div>
                   </div>
                 </div>
               ))}
