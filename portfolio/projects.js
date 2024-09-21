@@ -165,7 +165,7 @@ const projects = [
     tech: "MERN Stack and Tailwind CSS",
     image: "/projects/project21.webp",
     code: "https://github.com/vishal-kumaar/magic-notes",
-    live: "https://magicnotes.up.railway.app/",
+    live: "https://mymagicnotes.vercel.app/",
     desc: "This is the dynamic, good looking, and responsive note making web application. This website have many functionalities such as dark mode, user login, user signup, forgotten password, update/reset password, create note, edit note, check note, search note, delete note, etc. The tech stack that I use to create this note making web application is MongoDb, ExpressJs, ReactJs, NodeJs, and Tailwind CSS.",
   },
   {
